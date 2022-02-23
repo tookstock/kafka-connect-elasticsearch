@@ -12,6 +12,14 @@ To build a development version you'll need a recent version of Kafka as well as 
 
 You can build kafka-connect-elasticsearch with Maven using the standard lifecycle phases.
 
+Run
+
+```
+mvn install -DskipTests
+```
+
+or go through the hell of figuring out what it wants you to do for an es to connect to.
+
 # Configuring
 ## Creating an Elasticsearch user and assigning required privileges
 ### Create an Elasticsearch role
