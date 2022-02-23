@@ -22,4 +22,9 @@
       files="ElasticsearchSinkConnectorConfig.java"
     />
 
+    <suppress
+      checks="(LineLength)"
+      files="ElasticsearchSinkTask.java"
+    />
+
 </suppressions>
