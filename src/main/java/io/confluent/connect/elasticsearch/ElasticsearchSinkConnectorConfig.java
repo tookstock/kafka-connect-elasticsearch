@@ -48,6 +48,11 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
       + "``http``.";
   private static final String CONNECTION_URL_DISPLAY = "Connection URLs";
 
+  public static final String CLUSTER_STAGE_CONFIG  = "cluster.stage";
+  public static final String CLUSTER_STAGE_DOC     = "Stage of this deployment";
+  public static final String CLUSTER_STAGE_DISPLAY = "Stage";
+  public static final String CLUSTER_STAGE_DEFAULT = "dev";
+
   public static final String CONNECTION_USERNAME_CONFIG = "connection.username";
   private static final String CONNECTION_USERNAME_DOC =
       "The username used to authenticate with Elasticsearch. "
@@ -415,6 +420,16 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
             ++order,
             Width.LONG,
             CONNECTION_URL_DISPLAY
+        ).define(
+            CLUSTER_STAGE_CONFIG,
+            Type.STRING,
+            CLUSTER_STAGE_DEFAULT,
+            Importance.MEDIUM,
+            CLUSTER_STAGE_DOC,
+            CONNECTOR_GROUP,
+            ++order,
+            Width.SHORT,
+            CLUSTER_STAGE_DISPLAY
         ).define(
             CONNECTION_USERNAME_CONFIG,
             Type.STRING,
@@ -891,6 +906,10 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
     return getList(CONNECTION_URL_CONFIG)
         .stream().map(s -> s.endsWith("/") ? s.substring(0, s.length() - 1) : s)
         .collect(Collectors.toCollection(HashSet::new));
+  }
+
+  public String clusterStage() {
+    return getString(CLUSTER_STAGE_CONFIG);
   }
 
   public boolean dropInvalidMessage() {
