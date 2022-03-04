@@ -54,6 +54,7 @@ public class ElasticsearchSinkTask extends SinkTask {
   private Set<String> indexCache;
   private OffsetTracker offsetTracker;
   private PartitionPauser partitionPauser;
+  private String indexPrefix;
 
   @Override
   public void start(Map<String, String> props) {
@@ -65,6 +66,7 @@ public class ElasticsearchSinkTask extends SinkTask {
     log.info("Starting ElasticsearchSinkTask.");
 
     this.config = new ElasticsearchSinkConnectorConfig(props);
+    this.indexPrefix = config.clusterStage();
     this.converter = new DataConverter(config);
     this.existingMappings = new HashSet<>();
     this.indexCache = new HashSet<>();
@@ -295,12 +297,12 @@ public class ElasticsearchSinkTask extends SinkTask {
     String tipSeg = (parts.length >= 3) ? parts[2] : null;
     String srcPfx = srcSeg.substring(0, 3);
     String tipPfx = (tipSeg == null) ? null : tipSeg.substring(0, 3);
-    logTrace("id {} parts {} srcPfx {} tipPfx {}", id, parts, srcPfx, tipPfx);
+    // log.info("id {} parts {} srcPfx {} srcIndex {} tipPfx {}", id, parts, srcPfx, this.indexPrefix + "." + srcPfx, tipPfx);
 
     try {
-      tryWriteRecordPart(sinkRecord, offsetState, srcPfx);
+      tryWriteRecordPart(sinkRecord, offsetState, this.indexPrefix + "." + srcPfx);
       if (tipPfx != null) {
-        tryWriteRecordPart(sinkRecord, offsetState, tipPfx);
+        tryWriteRecordPart(sinkRecord, offsetState, this.indexPrefix + "." + tipPfx);
       }
     } catch (DataException convertException) {
       reportBadRecord(sinkRecord, convertException);
