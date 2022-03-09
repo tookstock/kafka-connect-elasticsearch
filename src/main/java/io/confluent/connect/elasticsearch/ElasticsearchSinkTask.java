@@ -298,7 +298,9 @@ public class ElasticsearchSinkTask extends SinkTask {
     String tipSeg = (parts.length >= 3) ? parts[2] : null;
     String srcPfx = srcSeg.substring(0, 3);
     String tipPfx = (tipSeg == null) ? null : tipSeg.substring(0, 3);
-    // log.info("id {} parts {} srcPfx {} srcIndex {} tipPfx {}", id, parts, srcPfx, this.indexPrefix + "." + srcPfx, tipPfx);
+    if (Math.random() < 0.01) {
+      log.info("id {} parts {} srcPfx {} srcIndex {} tipPfx {}", id, parts, srcPfx, this.indexPrefix + "." + srcPfx, tipPfx);
+    }
 
     try {
       tryWriteRecordPart(sinkRecord, offsetState, this.indexPrefix + "." + srcPfx);
