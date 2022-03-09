@@ -196,6 +196,9 @@ public class DataConverter {
         : preProcessValue(record.value(), record.valueSchema(), schema);
 
     byte[] rawJsonPayload = JSON_CONVERTER.fromConnectData(record.topic(), schema, value);
+    if (Math.random() < 0.01) {
+      log.info(new String(rawJsonPayload, StandardCharsets.UTF_8));
+    }
     return new String(rawJsonPayload, StandardCharsets.UTF_8);
   }
 
