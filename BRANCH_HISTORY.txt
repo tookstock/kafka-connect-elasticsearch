@@ -1,0 +1,1397 @@
+  20211207-flip-V2rc4                                                         2f8a0c8 fix: experimental-specifier-resolution not esm
+  20220202-flip-Version2_00_00_Spike1Actual                                   b9dac4e chore: logging improvements, and synced express handlers across the services
+  20220202-flip-Version2_00_00_Spike3                                         a741957 fix: gitignores had a stray bullet that would ignore any file in src/store/*.js!!
+  20220202-flip-Version2_00_00_Spike4                                         b9dac4e chore: logging improvements, and synced express handlers across the services
+  20220208-flip-AdjLoader                                                     4f81cc8 chore: made the eslintrc ignore the one in mearth
+  20220208-flip-ImportScriptHelpers                                           208db1c chore: secret agent toks template file
+  20220208-flip-SafeIntPriceUbuxFix                                           208db1c chore: secret agent toks template file
+  20220209-flip-ConsolidateExpresses                                          4f81cc8 chore: made the eslintrc ignore the one in mearth
+  20220209-flip-PeregrinAutomatedChecks                                       4f81cc8 chore: made the eslintrc ignore the one in mearth
+  20220214-flip-UnifiedServerCode                                             1e71636 fix: woops infinite loop in yarn start
+  20220215-flip-FasterNewbsAndMuRepo                                          78c2401 chore: first pass of making this base express server
+  20220215-flip-HelmgateIsGo                                                  692b26c fix: moved the async to where it won't disrupt earlier node versions
+  20220215-flip-HistoryCleanup                                                692b26c fix: moved the async to where it won't disrupt earlier node versions
+  20220215-flip-PeregrinEslintTweak                                           692b26c fix: moved the async to where it won't disrupt earlier node versions
+  20220215-flip-PeregrinUpdateBrowserList                                     4f81cc8 chore: made the eslintrc ignore the one in mearth
+  20220215-flip-UnifiedServerProductionReady                                  08e91a2 normalized luxon version
+  20220215-flip-Version_2_02_05_PreSafeIntHotfix                              208db1c chore: secret agent toks template file
+  20220215-flip-Version_2_02_05_PreSafeIntHotfixWithProcess                   208db1c chore: secret agent toks template file
+  20220215-flip-Version_2_02_06_AtMain                                        78c2401 chore: first pass of making this base express server
+  20220215-flip-Version_2_02_06_DataDogAndUbux                                208db1c chore: secret agent toks template file
+  20220215-flip-Version_2_02_07_RebasedOnMain                                 208db1c chore: secret agent toks template file
+  20220216-flip-NormalizedPackageJsons                                        0356031 Version number normalized across repos Bunch of new yarn files. Apart from Luxon I don't think any of the npms impact production; Knex has a major version update but there is nothing yet using it in production.
+  20220216-flip-WelcomeEntmoot2                                               0356031 Version number normalized across repos Bunch of new yarn files. Apart from Luxon I don't think any of the npms impact production; Knex has a major version update but there is nothing yet using it in production.
+  20220217-flip-LongerContactTitles                                           ef6c856 normalized luxon version
+  20220217-flip-MfgsInPub                                                     2be97c0 chore: TOOKNAME env var used instead of $USER for dev naming
+  20220217-flip-MfgsInPub                                                     bfff187 chore: .gitignore etc for branch cleanup artifacts
+  20220217-flip-NormalizedPackageJsonsTake2                                   08e91a2 normalized luxon version
+  20220217-flip-PerTypeCaching                                                2be97c0 chore: TOOKNAME env var used instead of $USER for dev naming
+  20220217-flip-PerTypeCaching                                                bfff187 chore: .gitignore etc for branch cleanup artifacts
+  20220218-flip-20220218-flip-ReconcileV23BranchesA                           b298526 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  20220218-flip-GitComparingHelper                                            25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  20220218-flip-IdtnFieldAndErrorClasses                                      25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  20220218-flip-LoggingImprovement                                            08e91a2 normalized luxon version
+  20220218-flip-LongerContactTitlesThisOneNotThatOne                          25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  20220218-flip-ReconcileV23Branches                                          b298526 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  20220218-flip-ReconcileV23BranchesA                                         b298526 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  20220218-flip-ReconcileV23BranchesToMain                                    25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  20220218-flip-UnifiedServerDockerMagic                                      c5c4ba2 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  20220218-flip-Version23Spike1                                               25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  20220220-flip-TestingImprovements                                           25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  20220223-flip-PgStoreIsAThing                                               ac8ed74 chore: TOOKNAME env var used instead of $USER for dev naming
+  20220223-flip-PgStoreIsAThing                                               bfff187 chore: .gitignore etc for branch cleanup artifacts
+  20220223-flip-TooknameForYouAndYou                                          ac8ed74 chore: TOOKNAME env var used instead of $USER for dev naming
+  20220223-vesparumdevs-Version_02_03_00_live                                 99d33cf chore: Added extra unauthenticated endpoints function
+  20220225-flip-BetterErrorsAndLogging                                        2be97c0 chore: TOOKNAME env var used instead of $USER for dev naming
+  20220225-flip-BranchCleanup                                                 bfff187 chore: .gitignore etc for branch cleanup artifacts
+  20220226-flip-KennyLoggins                                                  c0624d7 fix: stamping out splatty log calls
+  20220226-flip-PackageVersionNewest                                          1512363 chore: bumped all packages to newest except in peregrin
+  20220226-flip-StressTestNewCode                                             1512363 chore: bumped all packages to newest except in peregrin
+  20220227-flip-NoMoDynamo                                                    3f80a1b chore: removed dynamo
+  20220302-cfonseca-TookflowsEnhanced                                         0babdae chore: Changed Logger.warn to Logger.error on RuntimeErrorHandler
+  20220302-flip-SamwiseInMurepo                                               0a5f82f chore: deleted debug and morgan and other unused packages
+  20220303-flip-HybridPgEsStore                                               fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
+  20220303-flip-NoDebugEnvVar                                                 fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
+  20220303-flip-PgUsesPredicates                                              0babdae chore: Changed Logger.warn to Logger.error on RuntimeErrorHandler
+  20220303-flip-TableFromIdNotTypename                                        19f9bb5 chore: Logger and logger; RuntimeErrorHandler give structured log message
+  20220304-flip-StraightforwardListQueries                                    19f9bb5 chore: Logger and logger; RuntimeErrorHandler give structured log message
+  20220304-flip-StraightforwardListQueries                                    5ff8056 chore: cleaned/tagged branches
+  20220304-flip-Version_2_3_4_Spike1                                          19f9bb5 chore: Logger and logger; RuntimeErrorHandler give structured log message
+  20220308-flip-DeezerIsGo                                                    e09fdd4 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  20220309-flip-DeezerIsGoing                                                 c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  20220310-flip-BetterSearchPt1a                                              c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  20220310-flip-DeezerToCloud                                                 6073f91 chore: removed unuseful docker file
+  20220310-flip-EsPipeline                                                    6073f91 chore: removed unuseful docker file
+  20220311-cfonseca-BgsAndFixesIntoRelease                                    6073f91 chore: removed unuseful docker file
+  20220325-flip-DeezersMostlyWorky                                            a89887d fix: scoped name for pipeline
+  main                                                                        45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
+  main                                                                        c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  main                                                                        fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
+  master                                                                      898eb59 MINOR: Contribution guidelines for developers (#616)
+  origin/0.10.0.0                                                             f612755 Merge remote-tracking branch 'origin/master' into 0.10.0.0
+  origin/10.0.x                                                               f8c6e56 Merge branch '5.5.x' into 10.0.x
+  origin/11.0                                                                 8f67d08 Merge branch '5.5.x' into 10.0.x
+  origin/11.0.x                                                               40f0c64 Merge branch '10.0.x' into 11.0.x
+  origin/11.1.x                                                               816802b [maven-release-plugin] prepare for next development iteration
+  origin/12.0.x                                                               b362b91 Merge branch '11.1.x' into 12.0.x
+  origin/20220202-davidminich-PurchaseFix                                     208db1c chore: secret agent toks template file
+  origin/20220202-flip-Version2_00_00_Spike1Actual                            b9dac4e chore: logging improvements, and synced express handlers across the services
+  origin/20220205-flip-ApiTokenAuth                                           208db1c chore: secret agent toks template file
+  origin/20220208-flip-AdjLoader                                              4f81cc8 chore: made the eslintrc ignore the one in mearth
+  origin/20220208-flip-ImportScriptHelpers                                    208db1c chore: secret agent toks template file
+  origin/20220208-flip-SafeIntPriceUbuxFix                                    208db1c chore: secret agent toks template file
+  origin/20220209-flip-ConsolidateExpresses                                   4f81cc8 chore: made the eslintrc ignore the one in mearth
+  origin/20220209-flip-PeregrinAutomatedChecks                                4f81cc8 chore: made the eslintrc ignore the one in mearth
+  origin/20220210-flip-BotqlSimplerToSpell                                    2f37e3e feat: callers start the server themselves, and can supply their own config overrides
+  origin/20220210-flip-KlrtCatalogImportFixes                                 4f81cc8 chore: made the eslintrc ignore the one in mearth
+  origin/20220211-vesparumdevs-AuthUpdatesW2Rev1Rb                            4f81cc8 chore: made the eslintrc ignore the one in mearth
+  origin/20220214-flip-UnifiedServerCode                                      1e71636 fix: woops infinite loop in yarn start
+  origin/20220214-vesparumdevs-AerandirOnWorldV2                              1eac344 fix: little papercuts in helmsgate
+  origin/20220215-flip-FasterNewbsAndMuRepo                                   78c2401 chore: first pass of making this base express server
+  origin/20220215-flip-HelmgateIsGo                                           692b26c fix: moved the async to where it won't disrupt earlier node versions
+  origin/20220215-flip-HistoryCleanup                                         692b26c fix: moved the async to where it won't disrupt earlier node versions
+  origin/20220215-flip-PeregrinEslintTweak                                    692b26c fix: moved the async to where it won't disrupt earlier node versions
+  origin/20220215-flip-PeregrinUpdateBrowserList                              4f81cc8 chore: made the eslintrc ignore the one in mearth
+  origin/20220215-flip-UnifiedServerProductionReady                           08e91a2 normalized luxon version
+  origin/20220215-flip-Version_2_02_05_PreSafeIntHotfixWithProcess            208db1c chore: secret agent toks template file
+  origin/20220215-flip-Version_2_02_06_AtMain                                 78c2401 chore: first pass of making this base express server
+  origin/20220215-flip-Version_2_02_06_DataDogAndUbux                         208db1c chore: secret agent toks template file
+  origin/20220215-flip-Version_2_02_07_RebasedOnMain                          208db1c chore: secret agent toks template file
+  origin/20220215-vesparumdevs-AerandirJoinsUnification                       e52066b chore: ok fine everyone uses the full arda schema
+  origin/20220215-vesparumdevs-FlowrunRefreshOnTookflow                       78c2401 chore: first pass of making this base express server
+  origin/20220216-flip-NormalizedPackageJsons                                 0356031 Version number normalized across repos Bunch of new yarn files. Apart from Luxon I don't think any of the npms impact production; Knex has a major version update but there is nothing yet using it in production.
+  origin/20220216-flip-WelcomeEntmoot2                                        692b26c fix: moved the async to where it won't disrupt earlier node versions
+  origin/20220217-flip-LongerContactTitles                                    ef6c856 normalized luxon version
+  origin/20220217-flip-MfgsInPub                                              2be97c0 chore: TOOKNAME env var used instead of $USER for dev naming
+  origin/20220217-flip-MfgsInPub                                              bfff187 chore: .gitignore etc for branch cleanup artifacts
+  origin/20220217-flip-NormalizedPackageJsonsTake2                            08e91a2 normalized luxon version
+  origin/20220217-flip-PerTypeCaching                                         2be97c0 chore: TOOKNAME env var used instead of $USER for dev naming
+  origin/20220217-flip-PerTypeCaching                                         bfff187 chore: .gitignore etc for branch cleanup artifacts
+  origin/20220218-flip-20220218-flip-ReconcileV23BranchesA                    b298526 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  origin/20220218-flip-GitComparingHelper                                     25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220218-flip-IdtnFieldAndErrorClasses                               25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220218-flip-LoggingImprovement                                     08e91a2 normalized luxon version
+  origin/20220218-flip-LongerContactTitlesThisOneNotThatOne                   25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220218-flip-ReconcileV23Branches                                   08e91a2 normalized luxon version
+  origin/20220218-flip-ReconcileV23BranchesA                                  b298526 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  origin/20220218-flip-ReconcileV23BranchesToMain                             25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220218-flip-UnifiedServerDockerMagic                               c5c4ba2 chore: Open APIKEY_ONLY_ROUTE to bot paths
+  origin/20220218-flip-Version23Spike1                                        25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220219-davidminich-NewSoftDelete                                   25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220219-vesparumdevs-Version23MinorTweaks                           99d33cf chore: Added extra unauthenticated endpoints function
+  origin/20220220-flip-TestingImprovements                                    25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220221-davidminich-NewPeregrinEndpoint                             25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220222-davidminich-NopePeregrin                                    25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220223-davidminich-NewPeregrinCaching                              45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
+  origin/20220223-davidminich-NullShipweightsReally                           25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220223-davidminich-PeregrinCachingFixes                            25eeb53 Merge pull request #3 from tookstock/20220218-flip-ReconcileV23BranchesToMain
+  origin/20220223-davidminich-SeriouslyThisTimeNullShipWeights                99d33cf chore: Added extra unauthenticated endpoints function
+  origin/20220223-flip-PgStoreIsAThing                                        ac8ed74 chore: TOOKNAME env var used instead of $USER for dev naming
+  origin/20220223-flip-PgStoreIsAThing                                        bfff187 chore: .gitignore etc for branch cleanup artifacts
+  origin/20220223-flip-TooknameForYouAndYou                                   ac8ed74 chore: TOOKNAME env var used instead of $USER for dev naming
+  origin/20220223-vesparumdevs-Version_02_03_00_live                          99d33cf chore: Added extra unauthenticated endpoints function
+  origin/20220223-vesparumdevs-Version_02_03_01_live                          99d33cf chore: Added extra unauthenticated endpoints function
+  origin/20220224-davidminich-PeregrinDeletableIdentings                      45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
+  origin/20220225-flip-BetterErrorsAndLogging                                 2be97c0 chore: TOOKNAME env var used instead of $USER for dev naming
+  origin/20220225-flip-BranchCleanup                                          bfff187 chore: .gitignore etc for branch cleanup artifacts
+  origin/20220226-flip-KennyLoggins                                           c0624d7 fix: stamping out splatty log calls
+  origin/20220226-flip-PackageVersionNewest                                   1512363 chore: bumped all packages to newest except in peregrin
+  origin/20220226-flip-StressTestNewCode                                      1512363 chore: bumped all packages to newest except in peregrin
+  origin/20220227-davidminich-AerandirPacejetTimeout                          45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
+  origin/20220227-flip-NoMoDynamo                                             3f80a1b chore: removed dynamo
+  origin/20220228-cfonseca-MoreLogsForAerandir                                26e6fc0 chore: Changed Logger.error to Logger.warn on RuntimeErrorHandler
+  origin/20220302-cfonseca-TookflowsEnhanced                                  0babdae chore: Changed Logger.warn to Logger.error on RuntimeErrorHandler
+  origin/20220302-drm-DRMIsNowDRM                                             3f80a1b chore: removed dynamo
+  origin/20220302-flip-SamwiseInMurepo                                        0a5f82f chore: deleted debug and morgan and other unused packages
+  origin/20220303-flip-HybridPgEsStore                                        aa8fa35 chore: take stage in config
+  origin/20220303-flip-HybridPgEsStore                                        fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
+  origin/20220303-flip-NoDebugEnvVar                                          fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
+  origin/20220303-flip-PgUsesPredicates                                       0babdae chore: Changed Logger.warn to Logger.error on RuntimeErrorHandler
+  origin/20220303-flip-TableFromIdNotTypename                                 19f9bb5 chore: Logger and logger; RuntimeErrorHandler give structured log message
+  origin/20220304-flip-StraightforwardListQueries                             19f9bb5 chore: Logger and logger; RuntimeErrorHandler give structured log message
+  origin/20220304-flip-Version_2_3_4_Spike1                                   19f9bb5 chore: Logger and logger; RuntimeErrorHandler give structured log message
+  origin/20220308-flip-DeezerIsGo                                             e09fdd4 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220309-flip-DeezerIsGoing                                          c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220310-flip-BetterSearchPt1a                                       c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220310-flip-DeezerToCloud                                          6073f91 chore: removed unuseful docker file
+  origin/20220310-flip-EsPipeline                                             6073f91 chore: removed unuseful docker file
+  origin/20220311-cfonseca-BgsAndFixesIntoRelease                             6073f91 chore: removed unuseful docker file
+  origin/20220311-drm-AerandirFixesAnew                                       c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220311-drm-BetterSearchPt1ForReal                                  c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220311-drm-CullUnusedAerandirOps                                   c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220311-drm-PrepForLaunch                                           c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220311-drm-Version_2_3_5_Spike1                                    c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220311-drm-Version_2_3_5_Spike2                                    c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220312-drm-MergeChanges                                            6073f91 chore: removed unuseful docker file
+  origin/20220312-drm-Needy                                                   6073f91 chore: removed unuseful docker file
+  origin/20220312-drm-Version_2_3_5_Spike3                                    c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220318-drm-InventoryMagic                                          6073f91 chore: removed unuseful docker file
+  origin/20220321-drm-BetterFilters                                           6073f91 chore: removed unuseful docker file
+  origin/20220323-cfonseca-BlankyOnTookboxTerraform                           c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220324-drm-Version_2_3_6_Spike1                                    6073f91 chore: removed unuseful docker file
+  origin/20220325-cfonseca-TookboxTerraformUpdated                            c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220325-drm-MorePeregrinWins                                        6073f91 chore: removed unuseful docker file
+  origin/20220325-flip-DeezersMostlyWorky                                     a89887d fix: scoped name for pipeline
+  origin/3.1.0-post                                                           749a4c2 Set Confluent to 3.1.0, Kafka to 0.10.1.0-cp1.
+  origin/3.1.1-post                                                           3e30828 Merge branch '3.1.0-post' into 3.1.1-post
+  origin/3.1.2-post                                                           94ee4b1 Merge branch '3.1.1-post' into 3.1.2-post
+  origin/3.1.x                                                                4b8cc55 MINOR: Add codeowners (#429)
+  origin/3.2.0-post                                                           b6ac7e8 Merge branch '3.1.2-post' into 3.2.0-post
+  origin/3.2.1-post                                                           e47c7a0 Merge branch '3.2.0-post' into 3.2.1-post
+  origin/3.2.2-post                                                           bd8bd81 Merge branch '3.2.1-post' into 3.2.2-post
+  origin/3.2.4-post                                                           b845584 Set Confluent to 3.2.4, Kafka to 0.10.2.2-cp1.
+  origin/3.2.x                                                                7d21192 Merge branch '3.1.x' into 3.2.x
+  origin/3.3.0-post                                                           710d6fc Merge branch '3.2.4-post' into 3.3.0-post
+  origin/3.3.1-post                                                           a2106f7 Merge branch '3.3.0-post' into 3.3.1-post
+  origin/3.3.2-post                                                           4e420ef Merge branch '3.3.1-post' into 3.3.2-post
+  origin/3.3.3-post                                                           f91fa55 Set Confluent to 3.3.3, Kafka to 0.11.0.3-cp3.
+  origin/3.3.x                                                                cbad77f Merge branch '3.2.x' into 3.3.x
+  origin/4.0.0-post                                                           dbb331e Merge branch '3.3.3-post' into 4.0.0-post
+  origin/4.0.1-post                                                           2f715ac Merge branch '4.0.0-post' into 4.0.1-post
+  origin/4.0.2-post                                                           bc29ee9 Merge branch '4.0.1-post' into 4.0.2-post
+  origin/4.0.3-post                                                           e97d2c4 Set Confluent to 4.0.3, Kafka to 1.0.2-cp2.
+  origin/4.0.x                                                                6680f88 Merge branch '3.3.x' into 4.0.x
+  origin/4.1.0-post                                                           eeafb7c Merge branch '4.0.3-post' into 4.1.0-post
+  origin/4.1.1-post                                                           581faf6 Merge branch '4.1.0-post' into 4.1.1-post
+  origin/4.1.2-post                                                           95fed1f Merge branch '4.1.1-post' into 4.1.2-post
+  origin/4.1.3-post                                                           d48a4ca Set Confluent to 4.1.3, Kafka to 1.1.1-cp2.
+  origin/4.1.4-post                                                           f35b738 Set Confluent to 4.1.4, Kafka to 1.1.1-cp4.
+  origin/4.1.x                                                                2317e63 Bump Confluent to 4.1.5-SNAPSHOT, Kafka to 1.1.2-SNAPSHOT
+  origin/5.0.0-post                                                           b431208  Merge branch 4.1.4-post into 5.0.0-post (using strategy ours)
+  origin/5.0.1-post                                                           98c0072  Merge branch 5.0.0-post into 5.0.1-post (using strategy ours)
+  origin/5.0.2-post                                                           364dd6b  Merge branch 5.0.1-post into 5.0.2-post (using strategy ours)
+  origin/5.0.3-post                                                           9dade22  Merge branch 5.0.2-post into 5.0.3-post (using strategy ours)
+  origin/5.0.4-post                                                           15733c6  Merge branch 5.0.3-post into 5.0.4-post (using strategy ours)
+  origin/5.0.x                                                                2c153ce Merge branch '4.1.x' into 5.0.x
+  origin/5.1.0-post                                                           f39937e  Merge branch 5.0.4-post into 5.1.0-post (using strategy ours)
+  origin/5.1.1-post                                                           0163cd5  Merge branch 5.1.0-post into 5.1.1-post (using strategy ours)
+  origin/5.1.2-post                                                           fdb5b6a  Merge branch 5.1.1-post into 5.1.2-post (using strategy ours)
+  origin/5.1.3-post                                                           40f8bfd  Merge branch 5.1.2-post into 5.1.3-post (using strategy ours)
+  origin/5.1.4-post                                                           39ac401  Merge branch 5.1.3-post into 5.1.4-post (using strategy ours)
+  origin/5.1.x                                                                3a77da6 Merge branch '5.0.x' into 5.1.x
+  origin/5.2.0-post                                                           9375bb3  Merge branch 5.1.4-post into 5.2.0-post (using strategy ours)
+  origin/5.2.1-cp1                                                            7b20ad6 MINOR: checkstyle
+  origin/5.2.1-post                                                           3e9177b  Merge branch 5.2.0-post into 5.2.1-post (using strategy ours)
+  origin/5.2.2-post                                                           1afcf74  Merge branch 5.2.1-post into 5.2.2-post (using strategy ours)
+  origin/5.2.3-post                                                           cd833ac  Merge branch 5.2.2-post into 5.2.3-post (using strategy ours)
+  origin/5.2.4-post                                                           7988c3b  Merge branch 5.2.3-post into 5.2.4-post (using strategy ours)
+  origin/5.2.5-post                                                           d859584 Set Confluent to 5.2.5, Kafka to 2.2.2-cp5.
+  origin/5.2.6-post                                                           5af3d4e Set Confluent to 5.2.6, Kafka to 2.2.2-cp6.
+  origin/5.2.7-post                                                           fe23af7 Set Confluent to 5.2.7, Kafka to 2.2.2-cp7.
+  origin/5.2.x                                                                a8454da Bump Confluent to 5.2.8-SNAPSHOT, Kafka to 2.2.3-SNAPSHOT
+  origin/5.3.0-post                                                           1ea2fef Merge branch '5.2.7-post' into 5.3.0-post
+  origin/5.3.1-cp6                                                            5da46ed CC-6187: cache already existing index in JestElasticsearchClient (#356)
+  origin/5.3.1-cp7                                                            d26d36c Hotfix for 2011 (#363)
+  origin/5.3.1-post                                                           7951c48 Merge branch '5.3.0-post' into 5.3.1-post
+  origin/5.3.2-post                                                           b0ec6ba Merge branch '5.3.1-post' into 5.3.2-post
+  origin/5.3.3-post                                                           6af51fb Merge branch '5.3.2-post' into 5.3.3-post
+  origin/5.3.4-post                                                           3a6dcc0 Merge branch '5.3.3-post' into 5.3.4-post
+  origin/5.3.5-post                                                           fc3be1d Merge branch '5.3.4-post' into 5.3.5-post
+  origin/5.3.6-post                                                           ba1bcb7 Merge branch '5.3.5-post' into 5.3.6-post
+  origin/5.3.7-post                                                           0f299a3 Merge branch '5.3.6-post' into 5.3.7-post
+  origin/5.3.x                                                                e2fdd94 Merge branch '5.2.x' into 5.3.x
+  origin/5.4-preview                                                          3e8efb9 Disable slack notification
+  origin/5.4.0-post                                                           eab9853 Merge branch '5.3.7-post' into 5.4.0-post
+  origin/5.4.1-post                                                           9e92547 Merge branch '5.4.0-post' into 5.4.1-post
+  origin/5.4.2-post                                                           19f14e9 Merge branch '5.4.1-post' into 5.4.2-post
+  origin/5.4.3-post                                                           0dd431d Merge branch '5.4.2-post' into 5.4.3-post
+  origin/5.4.4-post                                                           d3759be Merge branch '5.4.3-post' into 5.4.4-post
+  origin/5.4.5-post                                                           4c6f5b3 Merge branch '5.4.4-post' into 5.4.5-post
+  origin/5.4.6-post                                                           9ff10b0 Merge branch '5.4.5-post' into 5.4.6-post
+  origin/5.4.x                                                                b3b4a5d Merge branch '5.3.x' into 5.4.x
+  origin/5.5.0-post                                                           02f25fe Merge branch '5.4.6-post' into 5.5.0-post
+  origin/5.5.1-post                                                           72a0b45 Merge branch '5.5.0-post' into 5.5.1-post
+  origin/5.5.2-post                                                           23685eb Merge branch '5.5.1-post' into 5.5.2-post
+  origin/5.5.3-post                                                           72095aa Merge branch '5.5.2-post' into 5.5.3-post
+  origin/5.5.4-post                                                           29f2afe Merge branch '5.5.3-post' into 5.5.4-post
+  origin/5.5.5-post                                                           680da71 Merge branch '5.5.4-post' into 5.5.5-post
+  origin/5.5.6-post                                                           4bd2e69 Merge branch '5.5.5-post' into 5.5.6-post
+  origin/5.5.7-post                                                           33c0d82 Merge branch '5.5.6-post' into 5.5.7-post
+  origin/5.5.x                                                                080131d Merge branch '5.4.x' into 5.5.x
+  origin/BuildCheckPR                                                         0c70ee8 Checking build
+  origin/CCLOG-1306                                                           0bc297f Unnecessary exclusion removed
+  origin/CCMSG-1394                                                           b3d537e CCMSG-1394: Fix compilation errors and suppress warnings.
+  origin/DLQ_IT                                                               33dfaa8 Apply suggestions from code review
+  origin/HEAD                                                                 c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/NathanNam-patch-1                                                    9bd7ddc Updated the doc link
+  origin/add-logs                                                             06d5112 Add error to log`
+  origin/add-retries                                                          da2f064 Flush not waiting for async batches to finish (#579)
+  origin/archive                                                              a09e7f4 add security suffix (#535)
+  origin/bulk_retries                                                         b742e51 Add test for network retries failure
+  origin/colivier/11.1.x                                                      c9d7d2e Merge branch '11.0.x' into colivier/11.1.x
+  origin/colivier/12.0.x                                                      84cd7e7 .
+  origin/colivier/working                                                     e414497 Set key to check against
+  origin/datastream                                                           e5876d3 Add separate if statement block for version validation.
+  origin/debian                                                               f13b533 CPKAFKA-1929: Adjust packaging for Scala 2.12 (#259)
+  origin/debian-5.1+                                                          b9865fb add security suffix (#537)
+  origin/dependabot/maven/org.elasticsearch-elasticsearch-7.14.0              1679a3e Bump elasticsearch from 7.9.3 to 7.14.0
+  origin/es-logs                                                              4bfba00 Change version logging to work with upgraded client
+  origin/fix_type_config_in_req                                               7507667 test
+  origin/force-sslit                                                          cdf1554 to test it ssl
+  origin/index-param-support                                                  25555ba Removed some extra logging statements.
+  origin/main                                                                 45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
+  origin/main                                                                 c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/main                                                                 fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
+  origin/master                                                               c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/pint-merge-ci                                                        c9e32c9 Onboarding with for the pint auto merge in jenkins
+  origin/prd                                                                  99d33cf chore: Added extra unauthenticated endpoints function
+  origin/prd_main                                                             99d33cf chore: Added extra unauthenticated endpoints function
+  origin/rpm                                                                  4209c83 Merge pull request #253 from ewencp/config-noreplace
+  origin/rpm-5.1+                                                             af579bd add security suffix (#536)
+  origin/testStrictMappings                                                   721b326 Fix offsets for individual record failure
+  origin/upgrade-client                                                       14488d2 Change MainResponse class location
+  origin/v11.0.5                                                              6ecbf7b [maven-release-plugin] Prepare staging release 11.0.7-rc-567da82
+  prd                                                                         99d33cf chore: Added extra unauthenticated endpoints function
+  prd_main                                                                    99d33cf chore: Added extra unauthenticated endpoints function
+  tag-20210831-flip-RectificationOfNames                                      ec703a8 Historical tag for 20210831-flip-RectificationOfNames
+  tag-20210921-flip-LShanaTova                                                238ca24 Historical tag for 20210921-flip-LShanaTova
+  tag-20210930-flip-ByeByeNodeModules                                         a695b47 Historical tag for 20210930-flip-ByeByeNodeModules
+  tag-20210930-flip-TestAllTheThings                                          fcfdda2 Historical tag for 20210930-flip-TestAllTheThings
+  tag-20211006-flip-ScriptAllTheThings                                        d20a8e2 Historical tag for 20211006-flip-ScriptAllTheThings
+  tag-20211012-flip-AllTheNaming                                              a1f1057 Historical tag for 20211012-flip-AllTheNaming
+  tag-20211012-flip-HutHutHandoff                                             8457647 Historical tag for 20211012-flip-HutHutHandoff
+  tag-20211018-flip-CustomResolvers                                           0074cec Historical tag for 20211018-flip-CustomResolvers
+  tag-20211020-flip-ElasticStoreCore                                          a5a8659 Historical tag for 20211020-flip-ElasticStoreCore
+  tag-20211021-flip-DeployAll                                                 0ca4705 Historical tag for 20211021-flip-DeployAll
+  tag-20211022-davidminich-V2Take3                                            db96517 Historical tag for 20211022-davidminich-V2Take3
+  tag-20211025-flip-AwesomeSearchFilters                                      53fddea Historical tag for 20211025-flip-AwesomeSearchFilters
+  tag-20211026-flip-V2SyncA                                                   75b544c Historical tag for 20211026-flip-V2SyncA
+  tag-20211028-flip-SweepPurchasings                                          043d70e Historical tag for 20211028-flip-SweepPurchasings
+  tag-20211031-flip-Testy                                                     cc7087f Historical tag for 20211031-flip-Testy
+  tag-20211101-flip-Buttonup                                                  ae6c525 Historical tag for 20211101-flip-Buttonup
+  tag-20211102-vesparumdevs-CognitoFlowsTake2                                 8e2aba1 Historical tag for 20211102-vesparumdevs-CognitoFlowsTake2
+  tag-20211103-flip-KitchenSync                                               a88c98f Historical tag for 20211103-flip-KitchenSync
+  tag-20211104-davidminich-ApproachingDawn                                    dd0f5b4 Historical tag for 20211104-davidminich-ApproachingDawn
+  tag-20211104-flip-E2EThursday                                               9d010a4 Historical tag for 20211104-flip-E2EThursday
+  tag-20211104-flip-NewTomorrow                                               0257c19 Historical tag for 20211104-flip-NewTomorrow
+  tag-20211104-vesparumdevs-CognitoFlowsTake3                                 bc8eba2 Historical tag for 20211104-vesparumdevs-CognitoFlowsTake3
+  tag-20211104-vesparumdevs-IdentsRebirth                                     779b41e Historical tag for 20211104-vesparumdevs-IdentsRebirth
+  tag-20211104-vesparumdevs-NewIdents                                         dc6f27a Historical tag for 20211104-vesparumdevs-NewIdents
+  tag-20211106-flip-V2spike1                                                  02ebffc Historical tag for 20211106-flip-V2spike1
+  tag-20211107-davidminich-RisingSun                                          b5f0ee5 Historical tag for 20211107-davidminich-RisingSun
+  tag-20211108-davidminich-SuperNova                                          7001446 Historical tag for 20211108-davidminich-SuperNova
+  tag-20211108-flip-20211106-flip-OkDavidSchemaFrozen                         dd827e5 Historical tag for 20211108-flip-20211106-flip-OkDavidSchemaFrozen
+  tag-20211108-flip-OkDavidSchemaFrozen                                       ebacd71 Historical tag for 20211108-flip-OkDavidSchemaFrozen
+  tag-20211108-vesparumdevs-NextOrgExtended                                   68af670 Historical tag for 20211108-vesparumdevs-NextOrgExtended
+  tag-20211110-davidminich-Acceptable                                         856fe23 Historical tag for 20211110-davidminich-Acceptable
+  tag-20211110-flip-V2Spike2                                                  74bcf78 Historical tag for 20211110-flip-V2Spike2
+  tag-20211112-davidminich-TheGreatMerging                                    89b9ef9 Historical tag for 20211112-davidminich-TheGreatMerging
+  tag-20211112-ubuntu-KlrtConversionV1_V2                                     52d0fb6 Historical tag for 20211112-ubuntu-KlrtConversionV1_V2
+  tag-20211113-flip-MaybeEvenGreaterMerging                                   a75787a Historical tag for 20211113-flip-MaybeEvenGreaterMerging
+  tag-20211113-flip-V2Expo3                                                   a37d6ce Historical tag for 20211113-flip-V2Expo3
+  tag-20211114-flip-V2rc1                                                     78bcd1c Historical tag for 20211114-flip-V2rc1
+  tag-20211115-davidminich-V2-Legacy                                          b8b70be Historical tag for 20211115-davidminich-V2-Legacy
+  tag-20211118-davidminich-PostShowFixes                                      36b665d Historical tag for 20211118-davidminich-PostShowFixes
+  tag-20211118-flip-BetterCaching                                             8276bb4 Historical tag for 20211118-flip-BetterCaching
+  tag-20211121-flip-EsmFtw                                                    bb4b556 Historical tag for 20211121-flip-EsmFtw
+  tag-20211121-flip-EsmWtf                                                    a42231d Historical tag for 20211121-flip-EsmWtf
+  tag-20211123-flip-EsDumpScript                                              f417f97 Historical tag for 20211123-flip-EsDumpScript
+  tag-20211124-davidminich-PurchasesAndMore                                   0addb35 Historical tag for 20211124-davidminich-PurchasesAndMore
+  tag-20211201-davidminich-TestDataTest                                       c13b2cb Historical tag for 20211201-davidminich-TestDataTest
+  tag-20211202-vesparumdevs-KlrtEsDumpV2World                                 da03b7b Historical tag for 20211202-vesparumdevs-KlrtEsDumpV2World
+  tag-20211206-vesparumdevs-KlrtDumpDeleteOnV2World                           dec02e1 Historical tag for 20211206-vesparumdevs-KlrtDumpDeleteOnV2World
+  tag-20211207-flip-V2rc4                                                     288c205 Historical tag for 20211207-flip-V2rc4
+  tag-20211210-flip-V2rc5                                                     02ced1b Historical tag for 20211210-flip-V2rc5
+  tag-20211214-flip-v2rc4a                                                    b568dde Historical tag for 20211214-flip-v2rc4a
+  tag-20211215-vesparumdevs-TookflowsN8NV2World                               7959901 Historical tag for 20211215-vesparumdevs-TookflowsN8NV2World
+  tag-20211222-vesparumdevs-KlrtERPNewFieldsV2World                           752f3a2 Historical tag for 20211222-vesparumdevs-KlrtERPNewFieldsV2World
+  tag-20211229-davidminich-TookflowIntegration                                995b8c2 Historical tag for 20211229-davidminich-TookflowIntegration
+  tag-20211231-vesparumdevs-KlrtERPSchemaChangesV2World                       368af41 Historical tag for 20211231-vesparumdevs-KlrtERPSchemaChangesV2World
+  tag-20220103-vesparumdevs-TookflowsForCognitoV2World                        bb913cb Historical tag for 20220103-vesparumdevs-TookflowsForCognitoV2World
+  tag-20220104-davidminich-PurchaseApprovals                                  1c44d06 Historical tag for 20220104-davidminich-PurchaseApprovals
+  tag-20220106-vesparumdevs-KlrtRoadToPurchaseWrld2Rev1                       6c9566c Historical tag for 20220106-vesparumdevs-KlrtRoadToPurchaseWrld2Rev1
+  tag-20220114-vesparumdevs-KlrtRoadToPurchaseWrld2Rev2                       03f641c Historical tag for 20220114-vesparumdevs-KlrtRoadToPurchaseWrld2Rev2
+  tag-20220126-flip-NewDataload                                               ab99f3d Historical tag for 20220126-flip-NewDataload
+  tag-20220126-vesparumdevs-KlrtRoadToPurchaseWrld2Rev3Rb                     05c9f01 Historical tag for 20220126-vesparumdevs-KlrtRoadToPurchaseWrld2Rev3Rb
+  tag-20220127-davidminich-PeregrinRefinement                                 e450b62 Historical tag for 20220127-davidminich-PeregrinRefinement
+  tag-20220127-flip-DataloadSpike1                                            87b3ba0 Historical tag for 20220127-flip-DataloadSpike1
+  tag-20220127-flip-DataloadSpike2                                            7127f1b Historical tag for 20220127-flip-DataloadSpike2
+  tag-20220127-vesparumdevs-KlrtRoadToPurchaseWrld2Rev4                       2419167 Historical tag for 20220127-vesparumdevs-KlrtRoadToPurchaseWrld2Rev4
+  tag-20220130-davidminich-Version2_00_00_Spike1                              21100f5 Historical tag for 20220130-davidminich-Version2_00_00_Spike1
+  tag-20220130-flip-DataloadSpike3                                            f6698c3 Historical tag for 20220130-flip-DataloadSpike3
+  tag-20220130-vesparumdevs-KlrtRoadToPurchaseWrld2Rc5                        9b05365 Historical tag for 20220130-vesparumdevs-KlrtRoadToPurchaseWrld2Rc5
+  tag-20220130-vesparumdevs-KlrtRoadToPurchaseWrld2Rev5                       f9e4adc Historical tag for 20220130-vesparumdevs-KlrtRoadToPurchaseWrld2Rev5
+  tag-20220131-flip-Version2_00_00_Spike2                                     1c44812 Historical tag for 20220131-flip-Version2_00_00_Spike2
+  tag-20220201-flip-DataloadSpike5                                            d8e17d9 Historical tag for 20220201-flip-DataloadSpike5
+  tag-20220202-davidminich-PurchaseFix                                        85a5c02 Historical tag for 20220202-davidminich-PurchaseFix
+  tag-20220202-flip-ElasticStoreCreateOrThrow                                 d676245 Historical tag for 20220202-flip-ElasticStoreCreateOrThrow
+  tag-20220202-flip-FasterNewbs                                               d114bb6 Historical tag for 20220202-flip-FasterNewbs
+  tag-20220202-flip-Version2_00_00_Spike1Actual                               1b003b4 Historical tag for 20220202-flip-Version2_00_00_Spike1Actual
+  tag-20220202-flip-Version2_00_00_Spike3                                     22fac31 Historical tag for 20220202-flip-Version2_00_00_Spike3
+  tag-20220202-flip-Version2_00_00_Spike4                                     7969a5e Historical tag for 20220202-flip-Version2_00_00_Spike4
+  tag-20220205-flip-ApiTokenAuth                                              2fdf69e Historical tag for 20220205-flip-ApiTokenAuth
+  tag-20220208-flip-AdjLoader                                                 d574751 Historical tag for 20220208-flip-AdjLoader
+  tag-20220208-flip-ImportScriptHelpers                                       041a2d1 Historical tag for 20220208-flip-ImportScriptHelpers
+  tag-20220208-flip-SafeIntPriceUbuxFix                                       e26414b Historical tag for 20220208-flip-SafeIntPriceUbuxFix
+  tag-20220209-flip-ConsolidateExpresses                                      770b7d6 Historical tag for 20220209-flip-ConsolidateExpresses
+  tag-20220209-flip-PeregrinAutomatedChecks                                   a5a836f Historical tag for 20220209-flip-PeregrinAutomatedChecks
+  tag-20220210-flip-BotqlSimplerToSpell                                       5f99867 Historical tag for 20220210-flip-BotqlSimplerToSpell
+  tag-20220210-flip-KlrtCatalogImportFixes                                    14c3da8 Historical tag for 20220210-flip-KlrtCatalogImportFixes
+  tag-20220211-vesparumdevs-AuthUpdatesW2Rev1Rb                               e4be742 Historical tag for 20220211-vesparumdevs-AuthUpdatesW2Rev1Rb
+  tag-20220214-flip-UnifiedServerCode                                         edaf3b2 Historical tag for 20220214-flip-UnifiedServerCode
+  tag-20220214-vesparumdevs-AerandirOnWorldV2                                 ed44229 Historical tag for 20220214-vesparumdevs-AerandirOnWorldV2
+  tag-20220215-flip-FasterNewbsAndMuRepo                                      f5548c2 Historical tag for 20220215-flip-FasterNewbsAndMuRepo
+  tag-20220215-flip-HelmgateIsGo                                              e8ce08a Historical tag for 20220215-flip-HelmgateIsGo
+  tag-20220215-flip-HistoryCleanup                                            d807e15 Historical tag for 20220215-flip-HistoryCleanup
+  tag-20220215-flip-PeregrinEslintTweak                                       aac8eb7 Historical marker for heads/20220215-flip-PeregrinEslintTweak
+  tag-20220215-flip-PeregrinUpdateBrowserList                                 503aab5 Historical tag for 20220215-flip-PeregrinUpdateBrowserList
+  tag-20220215-flip-UnifiedServerProductionReady                              91d9b4f Historical marker for heads/20220215-flip-UnifiedServerProductionReady
+  tag-20220215-flip-Version_2_02_05_PreSafeIntHotfix                          4d19940 Historical marker for heads/20220215-flip-Version_2_02_05_PreSafeIntHotfix
+  tag-20220215-flip-Version_2_02_05_PreSafeIntHotfixWithProcess               15fb058 Historical tag for 20220215-flip-Version_2_02_05_PreSafeIntHotfixWithProcess
+  tag-20220215-flip-Version_2_02_06_AtMain                                    ec8a445 Historical tag for 20220215-flip-Version_2_02_06_AtMain
+  tag-20220215-flip-Version_2_02_06_DataDogAndUbux                            470c036 Historical tag for 20220215-flip-Version_2_02_06_DataDogAndUbux
+  tag-20220215-flip-Version_2_02_07_RebasedOnMain                             5a9d4de Historical tag for 20220215-flip-Version_2_02_07_RebasedOnMain
+  tag-20220215-vesparumdevs-AerandirJoinsUnification                          7a09b98 Historical marker for origin/20220215-vesparumdevs-AerandirJoinsUnification
+  tag-20220215-vesparumdevs-FlowrunRefreshOnTookflow                          90221d8 Historical tag for 20220215-vesparumdevs-FlowrunRefreshOnTookflow
+  tag-20220216-flip-NormalizedPackageJsons                                    fe7bd76 Historical marker for heads/20220216-flip-NormalizedPackageJsons
+  tag-20220216-flip-WelcomeEntmoot2                                           e104070 Historical marker for origin/20220216-flip-WelcomeEntmoot2
+  tag-20220217-flip-LongerContactTitles                                       1d1f8c3 Historical marker for heads/20220217-flip-LongerContactTitles
+  tag-20220217-flip-NormalizedPackageJsonsTake2                               c0992c1 Historical marker for heads/20220217-flip-NormalizedPackageJsonsTake2
+  tag-20220218-flip-20220218-flip-ReconcileV23BranchesA                       cfc7634 Historical marker for heads/20220218-flip-20220218-flip-ReconcileV23BranchesA
+  tag-20220218-flip-GitComparingHelper                                        1f178f5 Historical marker for heads/20220218-flip-GitComparingHelper
+  tag-20220218-flip-IdtnFieldAndErrorClasses                                  fa12da7 Historical marker for heads/20220218-flip-IdtnFieldAndErrorClasses
+  tag-20220218-flip-LoggingImprovement                                        b463708 Historical marker for heads/20220218-flip-LoggingImprovement
+  tag-20220218-flip-LongerContactTitlesThisOneNotThatOne                      c7fe804 Historical marker for heads/20220218-flip-LongerContactTitlesThisOneNotThatOne
+  tag-20220218-flip-ReconcileV23Branches                                      d7d08f7 Historical marker for heads/20220218-flip-ReconcileV23Branches
+  tag-20220218-flip-ReconcileV23BranchesA                                     3fa9a62 Historical marker for heads/20220218-flip-ReconcileV23BranchesA
+  tag-20220218-flip-ReconcileV23BranchesToMain                                9a6bc27 Historical marker for heads/20220218-flip-ReconcileV23BranchesToMain
+  tag-20220218-flip-UnifiedServerDockerMagic                                  e2d314d Historical marker for heads/20220218-flip-UnifiedServerDockerMagic
+  tag-20220218-flip-Version23Spike1                                           fe91813 Historical marker for heads/20220218-flip-Version23Spike1
+  tag-20220219-davidminich-NewSoftDelete                                      467cba3 Historical marker for origin/20220219-davidminich-NewSoftDelete
+  tag-20220219-vesparumdevs-Version23MinorTweaks                              bc3887d Historical marker for origin/20220219-vesparumdevs-Version23MinorTweaks
+  tag-20220220-flip-TestingImprovements                                       ebcd49f Historical marker for heads/20220220-flip-TestingImprovements
+  tag-20220221-davidminich-NewPeregrinEndpoint                                d21e5fe Historical marker for origin/20220221-davidminich-NewPeregrinEndpoint
+  tag-20220222-davidminich-NopePeregrin                                       16252bf Historical marker for origin/20220222-davidminich-NopePeregrin
+  tag-20220223-davidminich-NullShipweightsReally                              a345680 Historical marker for origin/20220223-davidminich-NullShipweightsReally
+  tag-20220223-davidminich-PeregrinCachingFixes                               84ecfa0 Historical marker for origin/20220223-davidminich-PeregrinCachingFixes
+  tag-20220223-davidminich-SeriouslyThisTimeNullShipWeights                   3926df4 Historical marker for origin/20220223-davidminich-SeriouslyThisTimeNullShipWeights
+  tag-20220223-vesparumdevs-Version_02_03_00_live                             1f9373b Historical marker for heads/20220223-vesparumdevs-Version_02_03_00_live
+  tag-20220223-vesparumdevs-Version_02_03_01_live                             029de3d Historical marker for origin/20220223-vesparumdevs-Version_02_03_01_live
+  tag-prd                                                                     8997619 Historical marker for heads/prd
+  tag-prd_main                                                                e17e894 Historical marker for heads/prd_main
+  upstream/0.10.0.0                                                           f612755 Merge remote-tracking branch 'origin/master' into 0.10.0.0
+  upstream/10.0.x                                                             fe8abf7 Merge branch '5.5.x' into 10.0.x
+  upstream/11.0                                                               8f67d08 Merge branch '5.5.x' into 10.0.x
+  upstream/11.0.x                                                             75e9695 Merge branch '10.0.x' into 11.0.x
+  upstream/11.1.x                                                             c658b7b Merge branch '11.0.x' into 11.1.x
+  upstream/12.0.x                                                             5f87215 Merge branch '11.1.x' into 12.0.x
+  upstream/3.1.0-post                                                         749a4c2 Set Confluent to 3.1.0, Kafka to 0.10.1.0-cp1.
+  upstream/3.1.1-post                                                         3e30828 Merge branch '3.1.0-post' into 3.1.1-post
+  upstream/3.1.2-post                                                         94ee4b1 Merge branch '3.1.1-post' into 3.1.2-post
+  upstream/3.1.x                                                              4b8cc55 MINOR: Add codeowners (#429)
+  upstream/3.2.0-post                                                         b6ac7e8 Merge branch '3.1.2-post' into 3.2.0-post
+  upstream/3.2.1-post                                                         e47c7a0 Merge branch '3.2.0-post' into 3.2.1-post
+  upstream/3.2.2-post                                                         bd8bd81 Merge branch '3.2.1-post' into 3.2.2-post
+  upstream/3.2.4-post                                                         b845584 Set Confluent to 3.2.4, Kafka to 0.10.2.2-cp1.
+  upstream/3.2.x                                                              7d21192 Merge branch '3.1.x' into 3.2.x
+  upstream/3.3.0-post                                                         710d6fc Merge branch '3.2.4-post' into 3.3.0-post
+  upstream/3.3.1-post                                                         a2106f7 Merge branch '3.3.0-post' into 3.3.1-post
+  upstream/3.3.2-post                                                         4e420ef Merge branch '3.3.1-post' into 3.3.2-post
+  upstream/3.3.3-post                                                         f91fa55 Set Confluent to 3.3.3, Kafka to 0.11.0.3-cp3.
+  upstream/3.3.x                                                              cbad77f Merge branch '3.2.x' into 3.3.x
+  upstream/4.0.0-post                                                         dbb331e Merge branch '3.3.3-post' into 4.0.0-post
+  upstream/4.0.1-post                                                         2f715ac Merge branch '4.0.0-post' into 4.0.1-post
+  upstream/4.0.2-post                                                         bc29ee9 Merge branch '4.0.1-post' into 4.0.2-post
+  upstream/4.0.3-post                                                         e97d2c4 Set Confluent to 4.0.3, Kafka to 1.0.2-cp2.
+  upstream/4.0.x                                                              6680f88 Merge branch '3.3.x' into 4.0.x
+  upstream/4.1.0-post                                                         eeafb7c Merge branch '4.0.3-post' into 4.1.0-post
+  upstream/4.1.1-post                                                         581faf6 Merge branch '4.1.0-post' into 4.1.1-post
+  upstream/4.1.2-post                                                         95fed1f Merge branch '4.1.1-post' into 4.1.2-post
+  upstream/4.1.3-post                                                         d48a4ca Set Confluent to 4.1.3, Kafka to 1.1.1-cp2.
+  upstream/4.1.4-post                                                         f35b738 Set Confluent to 4.1.4, Kafka to 1.1.1-cp4.
+  upstream/4.1.x                                                              2317e63 Bump Confluent to 4.1.5-SNAPSHOT, Kafka to 1.1.2-SNAPSHOT
+  upstream/5.0.0-post                                                         b431208  Merge branch 4.1.4-post into 5.0.0-post (using strategy ours)
+  upstream/5.0.1-post                                                         98c0072  Merge branch 5.0.0-post into 5.0.1-post (using strategy ours)
+  upstream/5.0.2-post                                                         364dd6b  Merge branch 5.0.1-post into 5.0.2-post (using strategy ours)
+  upstream/5.0.3-post                                                         9dade22  Merge branch 5.0.2-post into 5.0.3-post (using strategy ours)
+  upstream/5.0.4-post                                                         15733c6  Merge branch 5.0.3-post into 5.0.4-post (using strategy ours)
+  upstream/5.0.x                                                              2c153ce Merge branch '4.1.x' into 5.0.x
+  upstream/5.1.0-post                                                         f39937e  Merge branch 5.0.4-post into 5.1.0-post (using strategy ours)
+  upstream/5.1.1-post                                                         0163cd5  Merge branch 5.1.0-post into 5.1.1-post (using strategy ours)
+  upstream/5.1.2-post                                                         fdb5b6a  Merge branch 5.1.1-post into 5.1.2-post (using strategy ours)
+  upstream/5.1.3-post                                                         40f8bfd  Merge branch 5.1.2-post into 5.1.3-post (using strategy ours)
+  upstream/5.1.4-post                                                         39ac401  Merge branch 5.1.3-post into 5.1.4-post (using strategy ours)
+  upstream/5.1.x                                                              3a77da6 Merge branch '5.0.x' into 5.1.x
+  upstream/5.2.0-post                                                         9375bb3  Merge branch 5.1.4-post into 5.2.0-post (using strategy ours)
+  upstream/5.2.1-cp1                                                          7b20ad6 MINOR: checkstyle
+  upstream/5.2.1-post                                                         3e9177b  Merge branch 5.2.0-post into 5.2.1-post (using strategy ours)
+  upstream/5.2.2-post                                                         1afcf74  Merge branch 5.2.1-post into 5.2.2-post (using strategy ours)
+  upstream/5.2.3-post                                                         cd833ac  Merge branch 5.2.2-post into 5.2.3-post (using strategy ours)
+  upstream/5.2.4-post                                                         7988c3b  Merge branch 5.2.3-post into 5.2.4-post (using strategy ours)
+  upstream/5.2.5-post                                                         d859584 Set Confluent to 5.2.5, Kafka to 2.2.2-cp5.
+  upstream/5.2.6-post                                                         5af3d4e Set Confluent to 5.2.6, Kafka to 2.2.2-cp6.
+  upstream/5.2.7-post                                                         fe23af7 Set Confluent to 5.2.7, Kafka to 2.2.2-cp7.
+  upstream/5.2.x                                                              a8454da Bump Confluent to 5.2.8-SNAPSHOT, Kafka to 2.2.3-SNAPSHOT
+  upstream/5.3.0-post                                                         1ea2fef Merge branch '5.2.7-post' into 5.3.0-post
+  upstream/5.3.1-cp6                                                          5da46ed CC-6187: cache already existing index in JestElasticsearchClient (#356)
+  upstream/5.3.1-cp7                                                          d26d36c Hotfix for 2011 (#363)
+  upstream/5.3.1-post                                                         7951c48 Merge branch '5.3.0-post' into 5.3.1-post
+  upstream/5.3.2-post                                                         b0ec6ba Merge branch '5.3.1-post' into 5.3.2-post
+  upstream/5.3.3-post                                                         6af51fb Merge branch '5.3.2-post' into 5.3.3-post
+  upstream/5.3.4-post                                                         3a6dcc0 Merge branch '5.3.3-post' into 5.3.4-post
+  upstream/5.3.5-post                                                         fc3be1d Merge branch '5.3.4-post' into 5.3.5-post
+  upstream/5.3.6-post                                                         ba1bcb7 Merge branch '5.3.5-post' into 5.3.6-post
+  upstream/5.3.7-post                                                         0f299a3 Merge branch '5.3.6-post' into 5.3.7-post
+  upstream/5.3.8-post                                                         183f743 Set Confluent to 5.3.8, Kafka to 5.3.8.
+  upstream/5.3.x                                                              7fa8264 Merge branch '5.3.8-post' into 5.3.x
+  upstream/5.4-preview                                                        3e8efb9 Disable slack notification
+  upstream/5.4.0-post                                                         9ca8b42 Merge branch '5.3.8-post' into 5.4.0-post
+  upstream/5.4.1-post                                                         7cf14ae Merge branch '5.4.0-post' into 5.4.1-post
+  upstream/5.4.2-post                                                         e3723d5 Merge branch '5.4.1-post' into 5.4.2-post
+  upstream/5.4.3-post                                                         352fc78 Merge branch '5.4.2-post' into 5.4.3-post
+  upstream/5.4.4-post                                                         813fe16 Merge branch '5.4.3-post' into 5.4.4-post
+  upstream/5.4.5-post                                                         c77c832 Merge branch '5.4.4-post' into 5.4.5-post
+  upstream/5.4.6-post                                                         0e97bd8 Merge branch '5.4.5-post' into 5.4.6-post
+  upstream/5.4.x                                                              630c6e6 Merge branch '5.3.x' into 5.4.x
+  upstream/5.5.0-post                                                         f2522ad Merge branch '5.4.6-post' into 5.5.0-post
+  upstream/5.5.1-post                                                         fe6577e Merge branch '5.5.0-post' into 5.5.1-post
+  upstream/5.5.2-post                                                         bccdf32 Merge branch '5.5.1-post' into 5.5.2-post
+  upstream/5.5.3-post                                                         8c027de Merge branch '5.5.2-post' into 5.5.3-post
+  upstream/5.5.4-post                                                         5b7804c Merge branch '5.5.3-post' into 5.5.4-post
+  upstream/5.5.5-post                                                         a116170 Merge branch '5.5.4-post' into 5.5.5-post
+  upstream/5.5.6-post                                                         19007e6 Merge branch '5.5.5-post' into 5.5.6-post
+  upstream/5.5.7-post                                                         3bc766a Merge branch '5.5.6-post' into 5.5.7-post
+  upstream/5.5.x                                                              fc61b3f Merge branch '5.4.x' into 5.5.x
+  upstream/BuildCheckPR                                                       0c70ee8 Checking build
+  upstream/CCLOG-1306                                                         0bc297f Unnecessary exclusion removed
+  upstream/CCMSG-1394                                                         b3d537e CCMSG-1394: Fix compilation errors and suppress warnings.
+  upstream/DLQ_IT                                                             33dfaa8 Apply suggestions from code review
+  upstream/NathanNam-patch-1                                                  9bd7ddc Updated the doc link
+  upstream/add-logs                                                           06d5112 Add error to log`
+  upstream/add-retries                                                        da2f064 Flush not waiting for async batches to finish (#579)
+  upstream/archive                                                            a09e7f4 add security suffix (#535)
+  upstream/bulk_retries                                                       b742e51 Add test for network retries failure
+  upstream/colivier/11.0.x                                                    7397b93 Check for null
+  upstream/colivier/11.1.x                                                    c9d7d2e Merge branch '11.0.x' into colivier/11.1.x
+  upstream/colivier/12.0.x                                                    84cd7e7 .
+  upstream/colivier/13.0.x                                                    7818ab4 Remove unused
+  upstream/colivier/working                                                   e414497 Set key to check against
+  upstream/datastream                                                         e5876d3 Add separate if statement block for version validation.
+  upstream/debian                                                             f13b533 CPKAFKA-1929: Adjust packaging for Scala 2.12 (#259)
+  upstream/debian-5.1+                                                        b9865fb add security suffix (#537)
+  upstream/dependabot/maven/org.elasticsearch-elasticsearch-7.14.0            1679a3e Bump elasticsearch from 7.9.3 to 7.14.0
+  upstream/es-logs                                                            4bfba00 Change version logging to work with upgraded client
+  upstream/fix_type_config_in_req                                             7507667 test
+  upstream/force-sslit                                                        cdf1554 to test it ssl
+  upstream/index-param-support                                                25555ba Removed some extra logging statements.
+  upstream/master                                                             6875031 Merge branch '12.0.x'
+  upstream/pint-merge-ci                                                      c9e32c9 Onboarding with for the pint auto merge in jenkins
+  upstream/rpm                                                                4209c83 Merge pull request #253 from ewencp/config-noreplace
+  upstream/rpm-5.1+                                                           af579bd add security suffix (#536)
+  upstream/testStrictMappings                                                 721b326 Fix offsets for individual record failure
+  upstream/upgrade-client                                                     14488d2 Change MainResponse class location
+  upstream/v11.0.5                                                            6ecbf7b [maven-release-plugin] Prepare staging release 11.0.7-rc-567da82
+  v02.03.00                                                                   8d71910 Version 02.03.00
+  v02.03.01                                                                   a727eca Version 02.03.01
+  v10.0.0                                                                     caf29c5 [maven-release-plugin] copy for tag v10.0.0
+  v10.0.1                                                                     56d75e8 [maven-release-plugin] copy for tag v10.0.1
+  v10.0.2                                                                     f8c2243 [maven-release-plugin] copy for tag v10.0.2
+  v10.0.3                                                                     f1a4471 [maven-release-plugin] copy for tag v10.0.3
+  v10.0.3-rc-9749d5e                                                          2482312 [maven-release-plugin] copy for tag v10.0.3-rc-9749d5e
+  v10.0.3-rc-afe71b3                                                          1faac34 [maven-release-plugin] copy for tag v10.0.3-rc-afe71b3
+  v11.0.0                                                                     d08ee25 [maven-release-plugin] copy for tag v11.0.0
+  v11.0.1                                                                     e4b7ba0 [maven-release-plugin] copy for tag v11.0.1
+  v11.0.1-rc-b98a059                                                          0013551 [maven-release-plugin] copy for tag v11.0.1-rc-b98a059
+  v11.0.1-rc-ddec626                                                          1153eb8 [maven-release-plugin] copy for tag v11.0.1-rc-ddec626
+  v11.0.2                                                                     4962915 [maven-release-plugin] copy for tag v11.0.2
+  v11.0.2-rc-c349679                                                          14ded61 [maven-release-plugin] copy for tag v11.0.2-rc-c349679
+  v11.0.3                                                                     ab340e2 [maven-release-plugin] copy for tag v11.0.3
+  v11.0.4                                                                     e2abb71 [maven-release-plugin] copy for tag v11.0.4
+  v11.0.4-rc-a685ada                                                          df0a068 [maven-release-plugin] copy for tag v11.0.4-rc-a685ada
+  v11.0.5                                                                     3e8f6e6 [maven-release-plugin] copy for tag v11.0.5
+  v11.0.5-rc-3e77998                                                          290f0d6 [maven-release-plugin] copy for tag v11.0.5-rc-3e77998
+  v11.0.6                                                                     fc02300 [maven-release-plugin] copy for tag v11.0.6
+  v11.0.7                                                                     3ffee3e [maven-release-plugin] copy for tag v11.0.7
+  v11.0.7-rc-567da82                                                          ef7dceb [maven-release-plugin] copy for tag v11.0.7-rc-567da82
+  v11.0.7-rc-931a9cb                                                          89093d1 [maven-release-plugin] copy for tag v11.0.7-rc-931a9cb
+  v11.0.8                                                                     69a8c7f [maven-release-plugin] copy for tag v11.0.8
+  v11.0.9                                                                     849128c [maven-release-plugin] copy for tag v11.0.9
+  v11.1.0                                                                     c9d74ed [maven-release-plugin] copy for tag v11.1.0
+  v11.1.0-rc-763062e                                                          edadcee [maven-release-plugin] copy for tag v11.1.0-rc-763062e
+  v11.1.0-rc-843c33f                                                          8ffecc6 [maven-release-plugin] copy for tag v11.1.0-rc-843c33f
+  v11.1.1                                                                     f805110 [maven-release-plugin] copy for tag v11.1.1
+  v11.1.1-rc-32ad327                                                          b7b6d78 [maven-release-plugin] copy for tag v11.1.1-rc-32ad327
+  v11.1.2                                                                     a76c28e [maven-release-plugin] copy for tag v11.1.2
+  v11.1.3                                                                     5a6a8aa [maven-release-plugin] copy for tag v11.1.3
+  v11.1.4                                                                     33c4da1 [maven-release-plugin] copy for tag v11.1.4
+  v11.1.5                                                                     3a703b0 [maven-release-plugin] copy for tag v11.1.5
+  v11.1.6                                                                     983225f [maven-release-plugin] copy for tag v11.1.6
+  v11.1.7                                                                     17118ed [maven-release-plugin] copy for tag v11.1.7
+  v11.1.8                                                                     c51c29d [maven-release-plugin] copy for tag v11.1.8
+  v3.1.0                                                                      a132952 Tagging final 3.1.0 release
+  v3.1.0-rc1                                                                  49b6416 Auto-created from branch 3.1.x
+  v3.1.0-rc2                                                                  2973404 Creating tag v3.1.0-rc2
+  v3.1.0-rc3                                                                  61f617b Creating tag v3.1.0-rc3
+  v3.1.0-rc4                                                                  5bbfcca Creating tag v3.1.0-rc4
+  v3.1.1                                                                      266bf3f Tagging final 3.1.1 release
+  v3.1.1-rc1                                                                  2a3c8c8 Creating tag v3.1.1-rc1
+  v3.1.2                                                                      2d35b45 Tagging final 3.1.2 release
+  v3.1.2-rc1                                                                  4a77a67 Creating tag v3.1.2-rc1
+  v3.2.0                                                                      57f04f1 Tagging final 3.2.0 release
+  v3.2.0-rc1                                                                  82e0206 Creating tag v3.2.0-rc1
+  v3.2.0-rc2                                                                  56f3661 Creating tag v3.2.0-rc2
+  v3.2.0-rc3                                                                  944a13a Creating tag v3.2.0-rc3
+  v3.2.0-rc4                                                                  b4802ac Creating tag v3.2.0-rc4
+  v3.2.0-rc5                                                                  8422cfb Creating tag v3.2.0-rc5
+  v3.2.0-rc6                                                                  1f52fa5 Creating tag v3.2.0-rc6
+  v3.2.1                                                                      a1ec9a4 Creating tag v3.2.1
+  v3.2.1-rc0                                                                  fbe4cac Creating tag v3.2.1-rc0
+  v3.2.1-rc1                                                                  71a4024 Creating tag v3.2.1-rc1
+  v3.2.1-rc2                                                                  d9857d9 Creating tag v3.2.1-rc2
+  v3.2.1-rc3                                                                  0661bd6 Creating tag v3.2.1-rc3
+  v3.2.1-rc4                                                                  0a699dc Creating tag v3.2.1-rc4
+  v3.2.1-rc5                                                                  da8a14e Creating tag v3.2.1-rc5
+  v3.2.2                                                                      2fc803b Tagging final 3.2.2 release
+  v3.2.2-rc1                                                                  25d1e99 Creating tag v3.2.2-rc1
+  v3.2.2-rc2                                                                  7e24d65 Creating tag v3.2.2-rc2
+  v3.2.3                                                                      eed19a9 Tagging final 3.2.3 release
+  v3.2.3-rc0                                                                  24c965c Creating tag v3.2.3-rc0
+  v3.2.3-rc1                                                                  b5073e0 Creating tag v3.2.3-rc1
+  v3.2.4                                                                      7beeed0 Tagging final 3.2.4 release for repo <git.Repo "/var/tmp/tmp68vf27m_/prod/kafka-connect-elasticsearch/.git">
+  v3.2.4-rc1                                                                  0e45182 Creating tag v3.2.4-rc1
+  v3.3.0                                                                      d6a5a14 Tagging final 3.3.0 release
+  v3.3.0-cp2                                                                  d864015 Creating tag v3.3.0-cp2
+  v3.3.0-hotfix.1                                                             9cd7c45 Creating tag v3.3.0-hotfix.1
+  v3.3.0-hotfix2                                                              c692546 Creating tag v3.3.0-hotfix2
+  v3.3.0-rc0                                                                  4540e14 Creating tag v3.3.0-rc0
+  v3.3.0-rc1                                                                  2034b56 Creating tag v3.3.0-rc1
+  v3.3.0-rc2                                                                  985dec7 Creating tag v3.3.0-rc2
+  v3.3.0-rc3                                                                  695cd45 Creating tag v3.3.0-rc3
+  v3.3.0-rc4                                                                  18d5928 Creating tag v3.3.0-rc4
+  v3.3.1                                                                      b2ee22d Tagging final 3.3.1 release
+  v3.3.1-alpha1                                                               025d130 Creating tag v3.3.1-alpha1
+  v3.3.1-alpha2                                                               e170b02 Creating tag v3.3.1-alpha2
+  v3.3.1-rc0                                                                  efef9b8 Creating tag v3.3.1-rc0
+  v3.3.1-rc2                                                                  9828b23 Creating tag v3.3.1-rc2
+  v3.3.1-rc3                                                                  b0c4a73 Creating tag v3.3.1-rc3
+  v3.3.1-rc4                                                                  4906bfb Creating tag v3.3.1-rc4
+  v3.3.1-rc5                                                                  3e446bb Creating tag v3.3.1-rc5
+  v3.3.2                                                                      0d0f4df Tagging final 3.3.2 release for repo <git.Repo "/var/tmp/tmp2bv0gpmj/prod/kafka-connect-elasticsearch/.git">
+  v3.3.2-cp1                                                                  7d0c97b Creating tag v3.3.2-cp1
+  v3.3.2-rc1                                                                  49068f1 Creating tag v3.3.2-rc1
+  v3.3.2-rc2                                                                  80b5c76 Creating tag v3.3.2-rc2
+  v3.3.3                                                                      73b86a7 Tagging final 3.3.3 release for repo <git.Repo "/var/tmp/tmpyc2839g2/prod/kafka-connect-elasticsearch/.git">
+  v3.3.3-rc1                                                                  0d0c3b1 Creating tag v3.3.3-rc1
+  v3.3.3-rc2                                                                  d16aa6a Creating tag v3.3.3-rc2
+  v4.0.0                                                                      f5812e0 Tagging final 4.0.0 release
+  v4.0.0-rc0                                                                  1b10775 Creating tag v4.0.0-rc0
+  v4.0.0-rc1                                                                  04c4a9b Creating tag v4.0.0-rc1
+  v4.0.0-rc2                                                                  a963c24 Creating tag v4.0.0-rc2
+  v4.0.0-rc3                                                                  ac80fd7 Creating tag v4.0.0-rc3
+  v4.0.1                                                                      1893a06 Tagging final 4.0.1 release for repo <git.Repo "/var/tmp/tmp6qd_gqfn/prod/kafka-connect-elasticsearch/.git">
+  v4.0.1-beta3                                                                58fd238 Creating tag v4.0.1-beta3
+  v4.0.1-beta7                                                                2831734 Creating tag v4.0.1-beta7
+  v4.0.1-rc1                                                                  f1fb35d Creating tag v4.0.1-rc1
+  v4.0.1-rc2                                                                  3f32f88 Creating tag v4.0.1-rc2
+  v4.0.2                                                                      1a6dcd3 Tagging final 4.0.2 release for repo <git.Repo "/var/tmp/tmpa9ioml2z/prod/kafka-connect-elasticsearch/.git">
+  v4.0.2-beta4                                                                cb6c9fd Creating tag v4.0.2-beta4
+  v4.0.2-rc1                                                                  33ade72 Creating tag v4.0.2-rc1
+  v4.0.3                                                                      3368dac Tagging final 4.0.3 release for repo <git.Repo "/var/tmp/tmp_47qu3ic/prod/kafka-connect-elasticsearch/.git">
+  v4.0.3-cp1-rc1                                                              faa5878 Creating tag v4.0.3-cp1-rc1
+  v4.0.3-cp1-rc2                                                              2336618 Creating tag v4.0.3-cp1-rc2
+  v4.0.3-cp1-rc3                                                              39544de Creating tag v4.0.3-cp1-rc3
+  v4.0.3-cp1-rc4                                                              eab2325 Creating tag v4.0.3-cp1-rc4
+  v4.0.3-cp1-rc5                                                              a8039de Creating tag v4.0.3-cp1-rc5
+  v4.0.3-rc2                                                                  b8898af Creating tag v4.0.3-rc2
+  v4.1.0                                                                      0930bc1 Tagging final 4.1.0 release
+  v4.1.0-rc1                                                                  29f8c3d Creating tag v4.1.0-rc1
+  v4.1.0-rc2                                                                  564a7ae Creating tag v4.1.0-rc2
+  v4.1.0-rc3                                                                  9184abb Creating tag v4.1.0-rc3
+  v4.1.0-rc4                                                                  9f1dbd5 Creating tag v4.1.0-rc4
+  v4.1.1                                                                      b954ff7 Tagging final 4.1.1 release for repo <git.Repo "/var/tmp/tmpul87cvrd/prod/kafka-connect-elasticsearch/.git">
+  v4.1.1-cp1-rc1                                                              1bb3168 Creating tag v4.1.1-cp1-rc1
+  v4.1.1-cp2-rc1                                                              17d2fcd Creating tag v4.1.1-cp2-rc1
+  v4.1.1-cp2-rc2                                                              fba9e45 Creating tag v4.1.1-cp2-rc2
+  v4.1.1-cp3-rc1                                                              1d491a6 Creating tag v4.1.1-cp3-rc1
+  v4.1.1-cp4-rc1                                                              52c3f06 Creating tag v4.1.1-cp4-rc1
+  v4.1.1-cp4-rc2                                                              dac986a Creating tag v4.1.1-cp4-rc2
+  v4.1.1-cp5-rc2                                                              14f2064 Creating tag v4.1.1-cp5-rc2
+  v4.1.1-cp5-rc3                                                              d3c92bf Creating tag v4.1.1-cp5-rc3
+  v4.1.1-cp5-rc4                                                              1af8e48 Creating tag v4.1.1-cp5-rc4
+  v4.1.1-cp5-rc5                                                              1efc19f Creating tag v4.1.1-cp5-rc5
+  v4.1.1-cp5-rc6                                                              5859b1a Creating tag v4.1.1-cp5-rc6
+  v4.1.1-cp6-rc1                                                              536d7d4 Creating tag v4.1.1-cp6-rc1
+  v4.1.1-cp7-rc1                                                              d779b20 Creating tag v4.1.1-cp7-rc1
+  v4.1.1-rc1                                                                  705e0c6 Creating tag v4.1.1-rc1
+  v4.1.1-rc2                                                                  dc3b795 Creating tag v4.1.1-rc2
+  v4.1.1-rc3                                                                  3940cd3 Creating tag v4.1.1-rc3
+  v4.1.2                                                                      7cb76c8 Tagging final 4.1.2 release for repo <git.Repo "/var/tmp/tmph71kw90s/prod/kafka-connect-elasticsearch/.git">
+  v4.1.2-beta180719000536                                                     cfc3b5d Creating tag v4.1.2-beta180719000536
+  v4.1.2-beta3                                                                8c2fd52 Creating tag v4.1.2-beta3
+  v4.1.2-cp1-rc1                                                              79d2da3 Creating tag v4.1.2-cp1-rc1
+  v4.1.2-rc1                                                                  ccdaf1e Creating tag v4.1.2-rc1
+  v4.1.3                                                                      1c1bd73 Tagging final 4.1.3 release for repo <git.Repo "/var/tmp/tmpnowq1_2b/prod/kafka-connect-elasticsearch/.git">
+  v4.1.3-beta180814192459                                                     a5e8aac Creating tag v4.1.3-beta180814192459
+  v4.1.3-beta180828173526                                                     bca7f67 Creating tag v4.1.3-beta180828173526
+  v4.1.3-rc1                                                                  9801ac4 Creating tag v4.1.3-rc1
+  v4.1.4                                                                      d05052e Tagging final 4.1.4 release for repo <git.Repo "/var/tmp/tmp6zjn9_i5/prod/kafka-connect-elasticsearch/.git">
+  v4.1.4-rc200521031229                                                       c8aac2f Creating tag v4.1.4-rc200521031229
+  v5.0.0                                                                      9e49f2e Tagging final 5.0.0 release for repo <git.Repo "/var/tmp/tmpwm2rfhzz/prod/kafka-connect-elasticsearch/.git">
+  v5.0.0-beta1                                                                8306f44 Creating tag v5.0.0-beta1
+  v5.0.0-beta10                                                               6fa703a Creating tag v5.0.0-beta10
+  v5.0.0-beta11                                                               ae52aa2 Creating tag v5.0.0-beta11
+  v5.0.0-beta12                                                               3e19733 Creating tag v5.0.0-beta12
+  v5.0.0-beta14                                                               7a40d79 Creating tag v5.0.0-beta14
+  v5.0.0-beta15                                                               448de97 Creating tag v5.0.0-beta15
+  v5.0.0-beta16                                                               a76b893 Creating tag v5.0.0-beta16
+  v5.0.0-beta17                                                               58de475 Creating tag v5.0.0-beta17
+  v5.0.0-beta18                                                               f24d990 Creating tag v5.0.0-beta18
+  v5.0.0-beta180622225242                                                     4920505 Creating tag v5.0.0-beta180622225242
+  v5.0.0-beta180626015140                                                     dede519 Creating tag v5.0.0-beta180626015140
+  v5.0.0-beta180627203620                                                     0d229aa Creating tag v5.0.0-beta180627203620
+  v5.0.0-beta180628184550                                                     a2de9d4 Creating tag v5.0.0-beta180628184550
+  v5.0.0-beta180628221539                                                     95f6195 Creating tag v5.0.0-beta180628221539
+  v5.0.0-beta180629053850                                                     a31930a Creating tag v5.0.0-beta180629053850
+  v5.0.0-beta180630224559                                                     4cf6d55 Creating tag v5.0.0-beta180630224559
+  v5.0.0-beta180701010229                                                     034a178 Creating tag v5.0.0-beta180701010229
+  v5.0.0-beta180701053749                                                     90ce6f1 Creating tag v5.0.0-beta180701053749
+  v5.0.0-beta180701175910                                                     b4d1723 Creating tag v5.0.0-beta180701175910
+  v5.0.0-beta180701205239                                                     bdb95eb Creating tag v5.0.0-beta180701205239
+  v5.0.0-beta180702185100                                                     e0c26f9 Creating tag v5.0.0-beta180702185100
+  v5.0.0-beta180702222458                                                     a81cbd1 Creating tag v5.0.0-beta180702222458
+  v5.0.0-beta180706202823                                                     6d347d3 Creating tag v5.0.0-beta180706202823
+  v5.0.0-beta180707005130                                                     1216745 Creating tag v5.0.0-beta180707005130
+  v5.0.0-beta180707072142                                                     0b58975 Creating tag v5.0.0-beta180707072142
+  v5.0.0-beta180718203558                                                     1bb7479 Creating tag v5.0.0-beta180718203558
+  v5.0.0-beta180722214927                                                     3b64e98 Creating tag v5.0.0-beta180722214927
+  v5.0.0-beta180723195256                                                     e48c042 Creating tag v5.0.0-beta180723195256
+  v5.0.0-beta180726003306                                                     2e1d08c Creating tag v5.0.0-beta180726003306
+  v5.0.0-beta180730183336                                                     e8d9899 Creating tag v5.0.0-beta180730183336
+  v5.0.0-beta19                                                               4ddb504 Creating tag v5.0.0-beta19
+  v5.0.0-beta2                                                                0557ef9 Creating tag v5.0.0-beta2
+  v5.0.0-beta20                                                               11bd168 Creating tag v5.0.0-beta20
+  v5.0.0-beta21                                                               535f644 Creating tag v5.0.0-beta21
+  v5.0.0-beta22                                                               f8fa0a2 Creating tag v5.0.0-beta22
+  v5.0.0-beta23                                                               08e3e50 Creating tag v5.0.0-beta23
+  v5.0.0-beta24                                                               437dcd6 Creating tag v5.0.0-beta24
+  v5.0.0-beta25                                                               5c4d4ac Creating tag v5.0.0-beta25
+  v5.0.0-beta26                                                               1620451 Creating tag v5.0.0-beta26
+  v5.0.0-beta27                                                               78f8a1d Creating tag v5.0.0-beta27
+  v5.0.0-beta28                                                               d1f0fcd Creating tag v5.0.0-beta28
+  v5.0.0-beta29                                                               28b27fc Creating tag v5.0.0-beta29
+  v5.0.0-beta3                                                                054a4ac Creating tag v5.0.0-beta3
+  v5.0.0-beta30                                                               e025664 Creating tag v5.0.0-beta30
+  v5.0.0-beta31                                                               d2bbfe4 Creating tag v5.0.0-beta31
+  v5.0.0-beta32                                                               68f21a2 Creating tag v5.0.0-beta32
+  v5.0.0-beta33                                                               0211d27 Creating tag v5.0.0-beta33
+  v5.0.0-beta5                                                                75f48b4 Creating tag v5.0.0-beta5
+  v5.0.0-beta6                                                                e328291 Creating tag v5.0.0-beta6
+  v5.0.0-beta7                                                                93f6b68 Creating tag v5.0.0-beta7
+  v5.0.0-beta8                                                                43fa119 Creating tag v5.0.0-beta8
+  v5.0.0-beta9                                                                89dce37 Creating tag v5.0.0-beta9
+  v5.0.0-rc1                                                                  5c5fa6a Creating tag v5.0.0-rc1
+  v5.0.0-rc3                                                                  e673b05 Creating tag v5.0.0-rc3
+  v5.0.0-rc4                                                                  7825199 Creating tag v5.0.0-rc4
+  v5.0.1                                                                      7583220 Tagging final 5.0.1 release for repo <git.Repo "/var/tmp/tmp6k7v2ljn/prod/kafka-connect-elasticsearch/.git">
+  v5.0.1-beta180802235906                                                     a5c17f8 Creating tag v5.0.1-beta180802235906
+  v5.0.1-beta180812233236                                                     79eef9f Creating tag v5.0.1-beta180812233236
+  v5.0.1-beta180824214627                                                     84d01ee Creating tag v5.0.1-beta180824214627
+  v5.0.1-beta180826190446                                                     2c77f90 Creating tag v5.0.1-beta180826190446
+  v5.0.1-beta180828173436                                                     68e4f62 Creating tag v5.0.1-beta180828173436
+  v5.0.1-beta180830182727                                                     6c2d531 Creating tag v5.0.1-beta180830182727
+  v5.0.1-beta180902210116                                                     9183891 Creating tag v5.0.1-beta180902210116
+  v5.0.1-beta180905054336                                                     ca79f98 Creating tag v5.0.1-beta180905054336
+  v5.0.1-beta180909000146                                                     49a71c3 Creating tag v5.0.1-beta180909000146
+  v5.0.1-beta180909000436                                                     33214e4 Creating tag v5.0.1-beta180909000436
+  v5.0.1-beta180911213156                                                     22df462 Creating tag v5.0.1-beta180911213156
+  v5.0.1-beta180913003126                                                     cbdc0ed Creating tag v5.0.1-beta180913003126
+  v5.0.1-beta180914024526                                                     c963427 Creating tag v5.0.1-beta180914024526
+  v5.0.1-beta181008233543                                                     157e00d Creating tag v5.0.1-beta181008233543
+  v5.0.1-beta181018200736                                                     3c0a469 Creating tag v5.0.1-beta181018200736
+  v5.0.1-cp1-rc3                                                              df419d2 Creating tag v5.0.1-cp1-rc3
+  v5.0.1-cp1-rc4                                                              345b9b0 Creating tag v5.0.1-cp1-rc4
+  v5.0.1-cp1-rc5                                                              73e82e4 Creating tag v5.0.1-cp1-rc5
+  v5.0.1-cp2-rc1                                                              c494359 Creating tag v5.0.1-cp2-rc1
+  v5.0.1-cp2-rc2                                                              5d98b6c Creating tag v5.0.1-cp2-rc2
+  v5.0.1-cp2-rc3                                                              a0137c0 Creating tag v5.0.1-cp2-rc3
+  v5.0.1-cp3-rc1                                                              ceb7de7 Creating tag v5.0.1-cp3-rc1
+  v5.0.1-rc1                                                                  baf6291 Creating tag v5.0.1-rc1
+  v5.0.1-rc2                                                                  1baf40d Creating tag v5.0.1-rc2
+  v5.0.1-rc3                                                                  c1943c4 Creating tag v5.0.1-rc3
+  v5.0.2                                                                      a204f6c Tagging final 5.0.2 release for repo <git.Repo "/var/tmp/tmpawhe69yw/prod/kafka-connect-elasticsearch/.git">
+  v5.0.2-beta181116204629                                                     5d52a18 Creating tag v5.0.2-beta181116204629
+  v5.0.2-beta181116204811                                                     cdb93f9 Creating tag v5.0.2-beta181116204811
+  v5.0.2-beta181116205152                                                     6d77244 Creating tag v5.0.2-beta181116205152
+  v5.0.2-beta181117022246                                                     159d379 Creating tag v5.0.2-beta181117022246
+  v5.0.2-beta181118024524                                                     3e89207 Creating tag v5.0.2-beta181118024524
+  v5.0.2-beta181119063215                                                     63734a1 Creating tag v5.0.2-beta181119063215
+  v5.0.2-beta181119185816                                                     0c42cdd Creating tag v5.0.2-beta181119185816
+  v5.0.2-beta181126211008                                                     d82de85 Creating tag v5.0.2-beta181126211008
+  v5.0.2-beta181127175917                                                     cd96568 Creating tag v5.0.2-beta181127175917
+  v5.0.2-beta181127180108                                                     1dbe4aa Creating tag v5.0.2-beta181127180108
+  v5.0.2-beta181127181654                                                     3d24821 Creating tag v5.0.2-beta181127181654
+  v5.0.2-beta181127181705                                                     6436916 Creating tag v5.0.2-beta181127181705
+  v5.0.2-beta181128024524                                                     54cec94 Creating tag v5.0.2-beta181128024524
+  v5.0.2-beta181130230514                                                     c774ff9 Creating tag v5.0.2-beta181130230514
+  v5.0.2-beta181203220147                                                     99d9624 Creating tag v5.0.2-beta181203220147
+  v5.0.2-beta181203220504                                                     57409c3 Creating tag v5.0.2-beta181203220504
+  v5.0.2-beta181203235053                                                     362a297 Creating tag v5.0.2-beta181203235053
+  v5.0.2-beta181204014059                                                     f4e9eb7 Creating tag v5.0.2-beta181204014059
+  v5.0.2-beta181205211305                                                     34aca7f Creating tag v5.0.2-beta181205211305
+  v5.0.2-beta181206075313                                                     da6533d Creating tag v5.0.2-beta181206075313
+  v5.0.2-beta181206174145                                                     dce818c Creating tag v5.0.2-beta181206174145
+  v5.0.2-beta181213235624                                                     4de540e Creating tag v5.0.2-beta181213235624
+  v5.0.2-beta181214001203                                                     12012f2 Creating tag v5.0.2-beta181214001203
+  v5.0.2-beta181214003258                                                     e7a82d6 Creating tag v5.0.2-beta181214003258
+  v5.0.2-beta181214003605                                                     409b339 Creating tag v5.0.2-beta181214003605
+  v5.0.2-rc1                                                                  485a4f7 Creating tag v5.0.2-rc1
+  v5.0.3                                                                      fa90a70 Tagging final 5.0.3 release for repo <git.Repo "/var/tmp/tmpt7v84ytj/prod/kafka-connect-elasticsearch/.git">
+  v5.0.3-cp1-rc1                                                              4849d73 Creating tag v5.0.3-cp1-rc1
+  v5.0.3-rc1                                                                  567d29f Creating tag v5.0.3-rc1
+  v5.0.4                                                                      88ffc5b Tagging final 5.0.4 release for repo <git.Repo "/var/tmp/tmputg597vy/prod/kafka-connect-elasticsearch/.git">
+  v5.0.4-cp1-rc1                                                              7e50afa Creating tag v5.0.4-cp1-rc1
+  v5.0.4-rc1                                                                  89856dd Creating tag v5.0.4-rc1
+  v5.0.4-rc200409201313                                                       f54a030 Creating tag v5.0.4-rc200409201313
+  v5.0.4-rc200514173140                                                       a6f6b07 Creating tag v5.0.4-rc200514173140
+  v5.1.0                                                                      98cba46 Tagging final 5.1.0 release for repo <git.Repo "/var/tmp/tmpb541vwla/prod/kafka-connect-elasticsearch/.git">
+  v5.1.0-beta180611231144                                                     ac646db Creating tag v5.1.0-beta180611231144
+  v5.1.0-beta180612043613                                                     ca07f9e Creating tag v5.1.0-beta180612043613
+  v5.1.0-beta180612224009                                                     7482333 Creating tag v5.1.0-beta180612224009
+  v5.1.0-beta180613013021                                                     79b8dfc Creating tag v5.1.0-beta180613013021
+  v5.1.0-beta180614233101                                                     81e8b88 Creating tag v5.1.0-beta180614233101
+  v5.1.0-beta180615005408                                                     39b8b6d Creating tag v5.1.0-beta180615005408
+  v5.1.0-beta180618191747                                                     2fe6c7c Creating tag v5.1.0-beta180618191747
+  v5.1.0-beta180618214711                                                     b2df70e Creating tag v5.1.0-beta180618214711
+  v5.1.0-beta180618223247                                                     037f3e3 Creating tag v5.1.0-beta180618223247
+  v5.1.0-beta180618225004                                                     cee8c4e Creating tag v5.1.0-beta180618225004
+  v5.1.0-beta180619025141                                                     1b30f8b Creating tag v5.1.0-beta180619025141
+  v5.1.0-beta180620180431                                                     165b8e3 Creating tag v5.1.0-beta180620180431
+  v5.1.0-beta180620180739                                                     a79421b Creating tag v5.1.0-beta180620180739
+  v5.1.0-beta180620183559                                                     1630dab Creating tag v5.1.0-beta180620183559
+  v5.1.0-beta180622181348                                                     f9bdce1 Creating tag v5.1.0-beta180622181348
+  v5.1.0-beta180626014959                                                     c1d42f1 Creating tag v5.1.0-beta180626014959
+  v5.1.0-beta180627203509                                                     8c8795a Creating tag v5.1.0-beta180627203509
+  v5.1.0-beta180628064520                                                     bf64d4a Creating tag v5.1.0-beta180628064520
+  v5.1.0-beta180628184841                                                     cbeb9be Creating tag v5.1.0-beta180628184841
+  v5.1.0-beta180630224439                                                     1cc718c Creating tag v5.1.0-beta180630224439
+  v5.1.0-beta180701010040                                                     e4421b7 Creating tag v5.1.0-beta180701010040
+  v5.1.0-beta180701175749                                                     16afe55 Creating tag v5.1.0-beta180701175749
+  v5.1.0-beta180702063039                                                     a5e295e Creating tag v5.1.0-beta180702063039
+  v5.1.0-beta180702063440                                                     633c5de Creating tag v5.1.0-beta180702063440
+  v5.1.0-beta180702214311                                                     82e3f4a Creating tag v5.1.0-beta180702214311
+  v5.1.0-beta180702220040                                                     baac9a0 Creating tag v5.1.0-beta180702220040
+  v5.1.0-beta180703024529                                                     1a9776e Creating tag v5.1.0-beta180703024529
+  v5.1.0-beta180706202701                                                     b00f3b9 Creating tag v5.1.0-beta180706202701
+  v5.1.0-beta180707004950                                                     6bec406 Creating tag v5.1.0-beta180707004950
+  v5.1.0-beta180718203536                                                     3ec6086 Creating tag v5.1.0-beta180718203536
+  v5.1.0-beta180722215127                                                     74cf56b Creating tag v5.1.0-beta180722215127
+  v5.1.0-beta180723023347                                                     60f1495 Creating tag v5.1.0-beta180723023347
+  v5.1.0-beta180723173636                                                     ed8586e Creating tag v5.1.0-beta180723173636
+  v5.1.0-beta180724024536                                                     97bdfde Creating tag v5.1.0-beta180724024536
+  v5.1.0-beta180730185716                                                     312f8fe Creating tag v5.1.0-beta180730185716
+  v5.1.0-beta180812233046                                                     e72a277 Creating tag v5.1.0-beta180812233046
+  v5.1.0-beta180820223106                                                     e2414d2 Creating tag v5.1.0-beta180820223106
+  v5.1.0-beta180824214446                                                     eeaab7a Creating tag v5.1.0-beta180824214446
+  v5.1.0-beta180828022857                                                     be07de7 Creating tag v5.1.0-beta180828022857
+  v5.1.0-beta180828173516                                                     bd5906e Creating tag v5.1.0-beta180828173516
+  v5.1.0-beta180829024526                                                     fe013b9 Creating tag v5.1.0-beta180829024526
+  v5.1.0-beta180905054157                                                     1a34a25 Creating tag v5.1.0-beta180905054157
+  v5.1.0-beta180911213206                                                     d4aee05 Creating tag v5.1.0-beta180911213206
+  v5.1.0-beta180912202326                                                     fce2b7f Creating tag v5.1.0-beta180912202326
+  v5.1.0-beta180917172706                                                     e04003a Creating tag v5.1.0-beta180917172706
+  v5.1.0-beta180919183606                                                     41f2ba9 Creating tag v5.1.0-beta180919183606
+  v5.1.0-beta180928000756                                                     b5c479f Creating tag v5.1.0-beta180928000756
+  v5.1.0-beta180929024526                                                     8ac1613 Creating tag v5.1.0-beta180929024526
+  v5.1.0-beta201806191956                                                     f674519 Creating tag v5.1.0-beta201806191956
+  v5.1.0-beta201806200051                                                     9e53016 Creating tag v5.1.0-beta201806200051
+  v5.1.0-beta34                                                               2b7bac1 Creating tag v5.1.0-beta34
+  v5.1.0-beta35                                                               8dcbfd5 Creating tag v5.1.0-beta35
+  v5.1.0-beta36                                                               158db2d Creating tag v5.1.0-beta36
+  v5.1.0-beta37                                                               3387e3f Creating tag v5.1.0-beta37
+  v5.1.0-beta38                                                               8f0bfa4 Creating tag v5.1.0-beta38
+  v5.1.0-beta39                                                               4b8309a Creating tag v5.1.0-beta39
+  v5.1.0-rc1                                                                  c59ee1f Creating tag v5.1.0-rc1
+  v5.1.0-rc2                                                                  8383b87 Creating tag v5.1.0-rc2
+  v5.1.0-rc3                                                                  10eb563 Creating tag v5.1.0-rc3
+  v5.1.1                                                                      ceb2862 Tagging final 5.1.1 release for repo <git.Repo "/var/tmp/tmpx0m2o_0s/prod/kafka-connect-elasticsearch/.git">
+  v5.1.1-rc1                                                                  aae779d Creating tag v5.1.1-rc1
+  v5.1.2                                                                      6ffc9a4 Tagging final 5.1.2 release for repo <git.Repo "/var/tmp/tmpd844y8le/prod/kafka-connect-elasticsearch/.git">
+  v5.1.2-cp1-rc1                                                              438d998 Creating tag v5.1.2-cp1-rc1
+  v5.1.2-cp2-rc1                                                              1b98b5c Creating tag v5.1.2-cp2-rc1
+  v5.1.2-cp3-rc1                                                              b1dd948 Creating tag v5.1.2-cp3-rc1
+  v5.1.2-rc1                                                                  591e6bd Creating tag v5.1.2-rc1
+  v5.1.3                                                                      94ca699 Tagging final 5.1.3 release for repo <git.Repo "/var/tmp/tmpkykkceqs/prod/kafka-connect-elasticsearch/.git">
+  v5.1.3-cp1-rc1                                                              62df77c Creating tag v5.1.3-cp1-rc1
+  v5.1.3-rc1                                                                  e314f98 Creating tag v5.1.3-rc1
+  v5.1.3-rc2                                                                  cb430d7 Creating tag v5.1.3-rc2
+  v5.1.3-rc3                                                                  76d521c Creating tag v5.1.3-rc3
+  v5.1.4                                                                      05623ef Tagging final 5.1.4 release for repo <git.Repo "/var/tmp/tmpa22kg412/prod/kafka-connect-elasticsearch/.git">
+  v5.1.4-rc200318060632                                                       8577a28 Creating tag v5.1.4-rc200318060632
+  v5.1.4-rc200323055810                                                       18df5d5 Creating tag v5.1.4-rc200323055810
+  v5.1.4-rc200326223958                                                       0e3683d Creating tag v5.1.4-rc200326223958
+  v5.1.4-rc200331201406                                                       8f11752 Creating tag v5.1.4-rc200331201406
+  v5.2.0                                                                      9bb0f9b Tagging final 5.2.0 release for repo <git.Repo "/var/tmp/tmpu2dna4cn/prod/kafka-connect-elasticsearch/.git">
+  v5.2.0-rc1                                                                  92ab55e Creating tag v5.2.0-rc1
+  v5.2.1                                                                      4beb6ca Tagging final 5.2.1 release for repo <git.Repo "/var/tmp/tmps7pkbsp4/prod/kafka-connect-elasticsearch/.git">
+  v5.2.1-cp1-rc1                                                              a03fd6d Set Confluent to 5.2.1-cp1, Kafka to 2.2.0-cp3.
+  v5.2.1-cp2-rc1                                                              0f1b5de Creating tag v5.2.1-cp2-rc1
+  v5.2.1-cp2-rc2                                                              e38ee3c Creating tag v5.2.1-cp2-rc2
+  v5.2.1-cp3-rc1                                                              7aee499 Creating tag v5.2.1-cp3-rc1
+  v5.2.1-cp4-rc1                                                              2c263e0 Creating tag v5.2.1-cp4-rc1
+  v5.2.1-cp4-rc2                                                              434ac55 Creating tag v5.2.1-cp4-rc2
+  v5.2.1-cp4-rc3                                                              473079a Creating tag v5.2.1-cp4-rc3
+  v5.2.1-cp4-rc4                                                              7950f82 Creating tag v5.2.1-cp4-rc4
+  v5.2.1-rc1                                                                  f7df16d Creating tag v5.2.1-rc1
+  v5.2.1-rc2                                                                  bd5f4d3 Creating tag v5.2.1-rc2
+  v5.2.2                                                                      04163ad Tagging final 5.2.2 release for repo <git.Repo "/var/tmp/tmpz6m_3kti/prod/kafka-connect-elasticsearch/.git">
+  v5.2.2-cp1-rc1                                                              51fe025 Creating tag v5.2.2-cp1-rc1
+  v5.2.2-cp2-rc1                                                              8329f89 Creating tag v5.2.2-cp2-rc1
+  v5.2.2-cp2-rc2                                                              abfd3f4 Creating tag v5.2.2-cp2-rc2
+  v5.2.2-cp3-rc1                                                              41e7dd0 Creating tag v5.2.2-cp3-rc1
+  v5.2.2-cp4-rc1                                                              d633174 Creating tag v5.2.2-cp4-rc1
+  v5.2.2-rc1                                                                  4d9384d Creating tag v5.2.2-rc1
+  v5.2.2-rc2                                                                  dc5a0c5 Creating tag v5.2.2-rc2
+  v5.2.2-rc3                                                                  3f082d5 Creating tag v5.2.2-rc3
+  v5.2.3                                                                      554d177 Tagging final 5.2.3 release for repo <git.Repo "/var/tmp/tmp1wt1soh0/prod/kafka-connect-elasticsearch/.git">
+  v5.2.3-beta190812232812                                                     5a7c994 Creating tag v5.2.3-beta190812232812
+  v5.2.3-cp1-rc1                                                              af25931 Creating tag v5.2.3-cp1-rc1
+  v5.2.3-cp2-rc1                                                              5213594 Creating tag v5.2.3-cp2-rc1
+  v5.2.3-rc190809074244                                                       6356dc9 Creating tag v5.2.3-rc190809074244
+  v5.2.3-rc190809083408                                                       64c1b04 Creating tag v5.2.3-rc190809083408
+  v5.2.3-rc190810083416                                                       cb156aa Creating tag v5.2.3-rc190810083416
+  v5.2.3-rc190811083412                                                       a4e6ade Creating tag v5.2.3-rc190811083412
+  v5.2.3-rc190812083421                                                       736a63a Creating tag v5.2.3-rc190812083421
+  v5.2.3-rc190813083421                                                       6e912e0 Creating tag v5.2.3-rc190813083421
+  v5.2.3-rc190814083421                                                       baa4f7e Creating tag v5.2.3-rc190814083421
+  v5.2.3-rc190815083422                                                       272474d Creating tag v5.2.3-rc190815083422
+  v5.2.3-rc190823053242                                                       05b13a3 Creating tag v5.2.3-rc190823053242
+  v5.2.4                                                                      af75cc4 Tagging final 5.2.4 release for repo <git.Repo "/var/tmp/tmphewpw79k/prod/kafka-connect-elasticsearch/.git">
+  v5.2.4-rc200318053454                                                       ea7cb8e Creating tag v5.2.4-rc200318053454
+  v5.2.4-rc200320212106                                                       e64d936 Creating tag v5.2.4-rc200320212106
+  v5.2.4-rc200324220349                                                       0796305 Creating tag v5.2.4-rc200324220349
+  v5.2.4-rc200326223933                                                       f1c98a9 Creating tag v5.2.4-rc200326223933
+  v5.2.5                                                                      47b2ee0 Tagging final 5.2.5 release for repo <git.repo.base.Repo '/var/tmp/tmp4v7pfj21/prod/kafka-connect-elasticsearch/.git'>
+  v5.2.5-rc210527013807                                                       d0a85ce Creating tag v5.2.5-rc210527013807
+  v5.2.5-rc210603231632                                                       a737f1f Creating tag v5.2.5-rc210603231632
+  v5.2.5-rc210608041840                                                       79b5180 Creating tag v5.2.5-rc210608041840
+  v5.2.5-rc210610213123                                                       1487971 Creating tag v5.2.5-rc210610213123
+  v5.2.5-rc210617190428                                                       2f8d94a Creating tag v5.2.5-rc210617190428
+  v5.2.6                                                                      23418cb Tagging final 5.2.6 release for repo <git.repo.base.Repo '/var/tmp/tmp1ydjwj8a/prod/kafka-connect-elasticsearch/.git'>
+  v5.2.6-rc210810222021                                                       14485dd Creating tag v5.2.6-rc210810222021
+  v5.2.6-rc210826183449                                                       25b8151 Creating tag v5.2.6-rc210826183449
+  v5.2.6-rc210909185455                                                       73d9616 Creating tag v5.2.6-rc210909185455
+  v5.2.6-rc210910191552                                                       c4fab5f Creating tag v5.2.6-rc210910191552
+  v5.2.7                                                                      393a120 Tagging final 5.2.7 release for repo <git.repo.base.Repo '/var/tmp/tmp6lda6rjm/prod/kafka-connect-elasticsearch/.git'>
+  v5.2.7-rc211119210428                                                       989ec0f Creating tag v5.2.7-rc211119210428
+  v5.3.0                                                                      fb67d1e Tagging final 5.3.0 release for repo <git.Repo "/var/tmp/tmplvak0z3r/prod/kafka-connect-elasticsearch/.git">
+  v5.3.0-beta190617173633                                                     3c538bd Creating tag v5.3.0-beta190617173633
+  v5.3.0-beta190617175514                                                     42bf562 Creating tag v5.3.0-beta190617175514
+  v5.3.0-beta190617225803                                                     2faa5e5 Creating tag v5.3.0-beta190617225803
+  v5.3.0-beta190618193216                                                     05fa099 Creating tag v5.3.0-beta190618193216
+  v5.3.0-beta190619193221                                                     82d5f5b Creating tag v5.3.0-beta190619193221
+  v5.3.0-beta190620193213                                                     aa542ea Creating tag v5.3.0-beta190620193213
+  v5.3.0-beta190621193232                                                     16e76ba Creating tag v5.3.0-beta190621193232
+  v5.3.0-beta190622193222                                                     80757bf Creating tag v5.3.0-beta190622193222
+  v5.3.0-beta190623193221                                                     c1676e2 Creating tag v5.3.0-beta190623193221
+  v5.3.0-beta190624193226                                                     c4d1433 Creating tag v5.3.0-beta190624193226
+  v5.3.0-beta190625193222                                                     9919929 Creating tag v5.3.0-beta190625193222
+  v5.3.0-beta190626193225                                                     0fa305f Creating tag v5.3.0-beta190626193225
+  v5.3.0-beta190627193615                                                     7c18300 Creating tag v5.3.0-beta190627193615
+  v5.3.0-beta190628193724                                                     814751b Creating tag v5.3.0-beta190628193724
+  v5.3.0-beta190629193226                                                     4fb9ca3 Creating tag v5.3.0-beta190629193226
+  v5.3.0-beta190630193226                                                     effc54e Creating tag v5.3.0-beta190630193226
+  v5.3.0-beta190701193213                                                     faa6df5 Creating tag v5.3.0-beta190701193213
+  v5.3.0-beta190702193216                                                     c53b0bb Creating tag v5.3.0-beta190702193216
+  v5.3.0-beta190703193251                                                     bc5f9a8 Creating tag v5.3.0-beta190703193251
+  v5.3.0-beta190704193225                                                     64150fd Creating tag v5.3.0-beta190704193225
+  v5.3.0-beta190705193219                                                     3eab0a3 Creating tag v5.3.0-beta190705193219
+  v5.3.0-beta190706193221                                                     e61fa73 Creating tag v5.3.0-beta190706193221
+  v5.3.0-beta190707193222                                                     5e093f7 Creating tag v5.3.0-beta190707193222
+  v5.3.0-beta190708193223                                                     43f0d83 Creating tag v5.3.0-beta190708193223
+  v5.3.0-beta190709193213                                                     f19bee8 Creating tag v5.3.0-beta190709193213
+  v5.3.0-beta190710193228                                                     f595c94 Creating tag v5.3.0-beta190710193228
+  v5.3.0-beta190710201857                                                     6b8fb18 Creating tag v5.3.0-beta190710201857
+  v5.3.0-beta190710202029                                                     da3fcd1 Creating tag v5.3.0-beta190710202029
+  v5.3.0-beta190711074210                                                     f725144 Creating tag v5.3.0-beta190711074210
+  v5.3.0-beta190711193444                                                     69ae4ce Creating tag v5.3.0-beta190711193444
+  v5.3.0-beta190712074224                                                     adb35c9 Creating tag v5.3.0-beta190712074224
+  v5.3.0-beta190712180016                                                     771fcf6 Creating tag v5.3.0-beta190712180016
+  v5.3.0-beta190712194101                                                     1e543de Creating tag v5.3.0-beta190712194101
+  v5.3.0-beta190713193230                                                     1b7b7d9 Creating tag v5.3.0-beta190713193230
+  v5.3.0-beta190714193221                                                     05521d8 Creating tag v5.3.0-beta190714193221
+  v5.3.0-beta190715193212                                                     762fdf9 Creating tag v5.3.0-beta190715193212
+  v5.3.0-beta190716193216                                                     a22be12 Creating tag v5.3.0-beta190716193216
+  v5.3.0-beta190717193212                                                     4f77a7e Creating tag v5.3.0-beta190717193212
+  v5.3.0-beta190718193216                                                     214e244 Creating tag v5.3.0-beta190718193216
+  v5.3.0-beta190719200004                                                     b95f936 Creating tag v5.3.0-beta190719200004
+  v5.3.0-cp1-rc2                                                              9b4f351 Creating tag v5.3.0-cp1-rc2
+  v5.3.0-cp2-rc1                                                              dc31b8f Creating tag v5.3.0-cp2-rc1
+  v5.3.0-rc1                                                                  e6bd927 Creating tag v5.3.0-rc1
+  v5.3.0-rc2                                                                  d9b4503 Creating tag v5.3.0-rc2
+  v5.3.0-rc3                                                                  578b7b9 Creating tag v5.3.0-rc3
+  v5.3.0-rc4                                                                  ec7926b Creating tag v5.3.0-rc4
+  v5.3.1                                                                      27ca441 Tagging final 5.3.1 release for repo <git.Repo "/var/tmp/tmppgd077q5/prod/kafka-connect-elasticsearch/.git">
+  v5.3.1-beta190720193220                                                     6430858 Creating tag v5.3.1-beta190720193220
+  v5.3.1-beta190721193221                                                     f7c0233 Creating tag v5.3.1-beta190721193221
+  v5.3.1-beta190722193225                                                     910fad5 Creating tag v5.3.1-beta190722193225
+  v5.3.1-beta190723193939                                                     318b927 Creating tag v5.3.1-beta190723193939
+  v5.3.1-beta190724193220                                                     1341a94 Creating tag v5.3.1-beta190724193220
+  v5.3.1-beta190724234015                                                     d080da3 Creating tag v5.3.1-beta190724234015
+  v5.3.1-beta190725235856                                                     3dc6a7e Creating tag v5.3.1-beta190725235856
+  v5.3.1-beta190726193231                                                     e386658 Creating tag v5.3.1-beta190726193231
+  v5.3.1-cp1-rc1                                                              3ea6610 Creating tag v5.3.1-cp1-rc1
+  v5.3.1-cp2-rc1                                                              1685ff3 Creating tag v5.3.1-cp2-rc1
+  v5.3.1-cp3-rc1                                                              4af2c0c Creating tag v5.3.1-cp3-rc1
+  v5.3.1-cp4-rc1                                                              79adce7 Creating tag v5.3.1-cp4-rc1
+  v5.3.1-cp6-rc1                                                              fc14372 Creating tag v5.3.1-cp6-rc1
+  v5.3.1-cp7-rc1                                                              c594fc7 Creating tag v5.3.1-cp7-rc1
+  v5.3.1-rc190815220454                                                       37b503c Creating tag v5.3.1-rc190815220454
+  v5.3.1-rc190815222423                                                       ea71474 Creating tag v5.3.1-rc190815222423
+  v5.3.1-rc190816083422                                                       04507f9 Creating tag v5.3.1-rc190816083422
+  v5.3.1-rc190817083408                                                       8763f4b Creating tag v5.3.1-rc190817083408
+  v5.3.1-rc190818091741                                                       d0ad5db Creating tag v5.3.1-rc190818091741
+  v5.3.1-rc190819083704                                                       8236323 Creating tag v5.3.1-rc190819083704
+  v5.3.1-rc190820083813                                                       5dca533 Creating tag v5.3.1-rc190820083813
+  v5.3.1-rc190821083421                                                       21453ca Creating tag v5.3.1-rc190821083421
+  v5.3.1-rc190822083409                                                       871e739 Creating tag v5.3.1-rc190822083409
+  v5.3.1-rc190823083421                                                       0b23a4d Creating tag v5.3.1-rc190823083421
+  v5.3.1-rc190824090727                                                       215b001 Creating tag v5.3.1-rc190824090727
+  v5.3.1-rc190825083415                                                       988764d Creating tag v5.3.1-rc190825083415
+  v5.3.1-rc190826083413                                                       57961bb Creating tag v5.3.1-rc190826083413
+  v5.3.1-rc190827083421                                                       d169b74 Creating tag v5.3.1-rc190827083421
+  v5.3.1-rc190830165349                                                       3b96c41 Creating tag v5.3.1-rc190830165349
+  v5.3.1-rc190831083410                                                       45cd2e5 Creating tag v5.3.1-rc190831083410
+  v5.3.1-rc190904141854                                                       e6b8407 Creating tag v5.3.1-rc190904141854
+  v5.3.2                                                                      79276cf Tagging final 5.3.2 release for repo <git.Repo "/var/tmp/tmp1zmkstei/prod/kafka-connect-elasticsearch/.git">
+  v5.3.2-cp1-rc1                                                              765af41 Creating tag v5.3.2-cp1-rc1
+  v5.3.2-cp1-rc2                                                              204b9d7 Creating tag v5.3.2-cp1-rc2
+  v5.3.2-cp1-rc3                                                              2d3aa11 Creating tag v5.3.2-cp1-rc3
+  v5.3.2-cp1-rc4                                                              16cb016 Creating tag v5.3.2-cp1-rc4
+  v5.3.2-cp1-rc5                                                              04bf2fc Creating tag v5.3.2-cp1-rc5
+  v5.3.2-cp1-rc6                                                              ad0a161 Creating tag v5.3.2-cp1-rc6
+  v5.3.2-cp1-rc7                                                              82bc052 Creating tag v5.3.2-cp1-rc7
+  v5.3.2-cp1-rc8                                                              4e600c4 Creating tag v5.3.2-cp1-rc8
+  v5.3.2-cp1-rc9                                                              75701e7 Creating tag v5.3.2-cp1-rc9
+  v5.3.2-rc191123050727                                                       f67d3ee Creating tag v5.3.2-rc191123050727
+  v5.3.2-rc191123211453                                                       cb40536 Creating tag v5.3.2-rc191123211453
+  v5.3.2-rc191124231608                                                       1dcef97 Creating tag v5.3.2-rc191124231608
+  v5.3.2-rc191211081117                                                       654a4f2 Creating tag v5.3.2-rc191211081117
+  v5.3.2-rc191213163932                                                       c8d492b Creating tag v5.3.2-rc191213163932
+  v5.3.3                                                                      439e183 Tagging final 5.3.3 release for repo <git.Repo "/var/tmp/tmp6fm16jp5/prod/kafka-connect-elasticsearch/.git">
+  v5.3.3-rc200306184957                                                       b3d65d6 Creating tag v5.3.3-rc200306184957
+  v5.3.3-rc200311144009                                                       fdb2498 Creating tag v5.3.3-rc200311144009
+  v5.3.4                                                                      9f9c7f0 Tagging final 5.3.4 release for repo <git.Repo "/var/tmp/tmpug9ugx8f/prod/kafka-connect-elasticsearch/.git">
+  v5.3.4-cp1-rc2                                                              598404f Creating tag v5.3.4-cp1-rc2
+  v5.3.4-rc200730213044                                                       7e5da06 Creating tag v5.3.4-rc200730213044
+  v5.3.4-rc200731203845                                                       9f1ff5b Creating tag v5.3.4-rc200731203845
+  v5.3.4-rc200806200602                                                       25f4a4a Creating tag v5.3.4-rc200806200602
+  v5.3.4-rc200817223723                                                       7fd8f0a Creating tag v5.3.4-rc200817223723
+  v5.3.4-rc200909174659                                                       2895572 Creating tag v5.3.4-rc200909174659
+  v5.3.5                                                                      da369fe Tagging final 5.3.5 release for repo <git.repo.base.Repo '/var/tmp/tmputb7cra0/prod/kafka-connect-elasticsearch/.git'>
+  v5.3.5-rc210527022500                                                       c8a1191 Creating tag v5.3.5-rc210527022500
+  v5.3.5-rc210603222512                                                       81e1e55 Creating tag v5.3.5-rc210603222512
+  v5.3.5-rc210608013152                                                       b52b45c Creating tag v5.3.5-rc210608013152
+  v5.3.6                                                                      5e0eab5 Tagging final 5.3.6 release for repo <git.repo.base.Repo '/var/tmp/tmpbpshond5/prod/kafka-connect-elasticsearch/.git'>
+  v5.3.6-rc210809214340                                                       863ff36 Creating tag v5.3.6-rc210809214340
+  v5.3.6-rc210810001504                                                       bf3738f Creating tag v5.3.6-rc210810001504
+  v5.3.6-rc210826201014                                                       d17420a Creating tag v5.3.6-rc210826201014
+  v5.3.7                                                                      cb5dde6 Tagging final 5.3.7 release for repo <git.repo.base.Repo '/var/tmp/tmpetw0o_ga/prod/kafka-connect-elasticsearch/.git'>
+  v5.3.7-rc1                                                                  e5c967f Creating tag v5.3.7-rc1
+  v5.3.7-rc211119154414                                                       5c93ce1 Creating tag v5.3.7-rc211119154414
+  v5.3.8                                                                      aee23fa Tagging final 5.3.8 release for repo <git.repo.base.Repo '/var/tmp/tmp709kwt5u/prod/kafka-connect-elasticsearch/.git'>
+  v5.3.8-rc220228230629                                                       3a880b9 Creating tag v5.3.8-rc220228230629
+  v5.4.0                                                                      a5a2884 Tagging final 5.4.0 release for repo <git.Repo "/var/tmp/tmpp7yemiz4/prod/kafka-connect-elasticsearch/.git">
+  v5.4.0-beta190804153229                                                     d27e464 Creating tag v5.4.0-beta190804153229
+  v5.4.0-beta190806002701                                                     b160f91 Creating tag v5.4.0-beta190806002701
+  v5.4.0-beta190806193725                                                     e9983cf Creating tag v5.4.0-beta190806193725
+  v5.4.0-beta190807193222                                                     cb9fbfb Creating tag v5.4.0-beta190807193222
+  v5.4.0-beta190808193705                                                     87fedd7 Creating tag v5.4.0-beta190808193705
+  v5.4.0-beta190809070014                                                     02564c2 Creating tag v5.4.0-beta190809070014
+  v5.4.0-beta190809070114                                                     15ca0df Creating tag v5.4.0-beta190809070114
+  v5.4.0-beta190809074529                                                     df4d529 Creating tag v5.4.0-beta190809074529
+  v5.4.0-beta190809193509                                                     2998e8b Creating tag v5.4.0-beta190809193509
+  v5.4.0-beta190810193226                                                     6c79478 Creating tag v5.4.0-beta190810193226
+  v5.4.0-beta190811193210                                                     96dd4b0 Creating tag v5.4.0-beta190811193210
+  v5.4.0-beta190812193234                                                     cd5fd9b Creating tag v5.4.0-beta190812193234
+  v5.4.0-beta190813193703                                                     ab71e7e Creating tag v5.4.0-beta190813193703
+  v5.4.0-beta190814193933                                                     3eb277b Creating tag v5.4.0-beta190814193933
+  v5.4.0-beta190815193825                                                     e4fb53c Creating tag v5.4.0-beta190815193825
+  v5.4.0-beta190816194907                                                     6481533 Creating tag v5.4.0-beta190816194907
+  v5.4.0-beta190817193233                                                     d7cde1e Creating tag v5.4.0-beta190817193233
+  v5.4.0-beta190818195358                                                     a63ff8e Creating tag v5.4.0-beta190818195358
+  v5.4.0-beta190819195054                                                     f9b73d0 Creating tag v5.4.0-beta190819195054
+  v5.4.0-beta190820025934                                                     c4b2b53 Creating tag v5.4.0-beta190820025934
+  v5.4.0-beta190820200251                                                     d40ff7d Creating tag v5.4.0-beta190820200251
+  v5.4.0-beta190821193309                                                     dfb9aa1 Creating tag v5.4.0-beta190821193309
+  v5.4.0-beta190821200958                                                     4ce9583 Creating tag v5.4.0-beta190821200958
+  v5.4.0-beta190822194627                                                     e04cf34 Creating tag v5.4.0-beta190822194627
+  v5.4.0-beta190823194814                                                     0e9a1ef Creating tag v5.4.0-beta190823194814
+  v5.4.0-beta190824193213                                                     18bc3ea Creating tag v5.4.0-beta190824193213
+  v5.4.0-beta190825193222                                                     2b0aa34 Creating tag v5.4.0-beta190825193222
+  v5.4.0-beta190826194717                                                     62c6c0c Creating tag v5.4.0-beta190826194717
+  v5.4.0-beta190827194146                                                     f0c5cfe Creating tag v5.4.0-beta190827194146
+  v5.4.0-beta190828193236                                                     1250829 Creating tag v5.4.0-beta190828193236
+  v5.4.0-beta190829193212                                                     b16eb5b Creating tag v5.4.0-beta190829193212
+  v5.4.0-beta190830193224                                                     b35a94b Creating tag v5.4.0-beta190830193224
+  v5.4.0-beta190831193213                                                     bf96da4 Creating tag v5.4.0-beta190831193213
+  v5.4.0-beta190901193213                                                     beb471c Creating tag v5.4.0-beta190901193213
+  v5.4.0-beta190902193228                                                     dc6d5f9 Creating tag v5.4.0-beta190902193228
+  v5.4.0-beta190904184756                                                     9de7aad Creating tag v5.4.0-beta190904184756
+  v5.4.0-beta190904193226                                                     5a68457 Creating tag v5.4.0-beta190904193226
+  v5.4.0-beta190905193210                                                     634597f Creating tag v5.4.0-beta190905193210
+  v5.4.0-beta190906193214                                                     9c86a8d Creating tag v5.4.0-beta190906193214
+  v5.4.0-beta190907193232                                                     6736ba2 Creating tag v5.4.0-beta190907193232
+  v5.4.0-beta190908193218                                                     8ca4ace Creating tag v5.4.0-beta190908193218
+  v5.4.0-beta190909193216                                                     7127a5b Creating tag v5.4.0-beta190909193216
+  v5.4.0-beta190910193220                                                     a201f3c Creating tag v5.4.0-beta190910193220
+  v5.4.0-beta190911193225                                                     276ea57 Creating tag v5.4.0-beta190911193225
+  v5.4.0-beta190912193228                                                     24633a4 Creating tag v5.4.0-beta190912193228
+  v5.4.0-beta190913193214                                                     f035127 Creating tag v5.4.0-beta190913193214
+  v5.4.0-beta190914193219                                                     849f945 Creating tag v5.4.0-beta190914193219
+  v5.4.0-beta190915193214                                                     6fab281 Creating tag v5.4.0-beta190915193214
+  v5.4.0-beta190916193216                                                     e9523e0 Creating tag v5.4.0-beta190916193216
+  v5.4.0-beta190917193214                                                     e8b97ad Creating tag v5.4.0-beta190917193214
+  v5.4.0-beta190918193223                                                     4732200 Creating tag v5.4.0-beta190918193223
+  v5.4.0-beta190919193226                                                     abd934c Creating tag v5.4.0-beta190919193226
+  v5.4.0-beta190920193214                                                     f2987ff Creating tag v5.4.0-beta190920193214
+  v5.4.0-beta190921193217                                                     02757e9 Creating tag v5.4.0-beta190921193217
+  v5.4.0-beta190922193217                                                     56f29bd Creating tag v5.4.0-beta190922193217
+  v5.4.0-beta190923193218                                                     85e5090 Creating tag v5.4.0-beta190923193218
+  v5.4.0-beta190924193216                                                     df9011e Creating tag v5.4.0-beta190924193216
+  v5.4.0-beta190925193823                                                     9ce447e Creating tag v5.4.0-beta190925193823
+  v5.4.0-beta190926193217                                                     8370409 Creating tag v5.4.0-beta190926193217
+  v5.4.0-beta190927193221                                                     a2eb13b Creating tag v5.4.0-beta190927193221
+  v5.4.0-beta190928193212                                                     0b96cb8 Creating tag v5.4.0-beta190928193212
+  v5.4.0-beta190929193220                                                     0d96ee0 Creating tag v5.4.0-beta190929193220
+  v5.4.0-beta190930193218                                                     b341eba Creating tag v5.4.0-beta190930193218
+  v5.4.0-beta191001193218                                                     2d2cd45 Creating tag v5.4.0-beta191001193218
+  v5.4.0-beta191002193221                                                     7235798 Creating tag v5.4.0-beta191002193221
+  v5.4.0-beta191003193211                                                     4a78a2c Creating tag v5.4.0-beta191003193211
+  v5.4.0-beta191004193216                                                     af87ff3 Creating tag v5.4.0-beta191004193216
+  v5.4.0-beta191009230048                                                     9461de0 Creating tag v5.4.0-beta191009230048
+  v5.4.0-beta191010193219                                                     765eb03 Creating tag v5.4.0-beta191010193219
+  v5.4.0-beta191011193231                                                     9a835ec Creating tag v5.4.0-beta191011193231
+  v5.4.0-beta191012193213                                                     7d427d9 Creating tag v5.4.0-beta191012193213
+  v5.4.0-beta191013193221                                                     87ddcc7 Creating tag v5.4.0-beta191013193221
+  v5.4.0-beta191014193214                                                     4980cbc Creating tag v5.4.0-beta191014193214
+  v5.4.0-beta191015194035                                                     cda4257 Creating tag v5.4.0-beta191015194035
+  v5.4.0-beta191016193231                                                     efbe248 Creating tag v5.4.0-beta191016193231
+  v5.4.0-beta191017191445                                                     fe3349b Creating tag v5.4.0-beta191017191445
+  v5.4.0-beta191017193411                                                     4fe2a3e Creating tag v5.4.0-beta191017193411
+  v5.4.0-beta191018193229                                                     5eea44a Creating tag v5.4.0-beta191018193229
+  v5.4.0-beta191019193219                                                     b21fc40 Creating tag v5.4.0-beta191019193219
+  v5.4.0-beta191020193218                                                     12de260 Creating tag v5.4.0-beta191020193218
+  v5.4.0-beta191021193218                                                     c9395b1 Creating tag v5.4.0-beta191021193218
+  v5.4.0-beta191022193231                                                     2738d49 Creating tag v5.4.0-beta191022193231
+  v5.4.0-beta191023193230                                                     17f13cc Creating tag v5.4.0-beta191023193230
+  v5.4.0-beta191025193231                                                     1f332e7 Creating tag v5.4.0-beta191025193231
+  v5.4.0-beta191026062717                                                     c7178a0 Creating tag v5.4.0-beta191026062717
+  v5.4.0-beta191026175117                                                     1e9e6b7 Creating tag v5.4.0-beta191026175117
+  v5.4.0-beta191026193213                                                     e5f62fb Creating tag v5.4.0-beta191026193213
+  v5.4.0-beta191027175859                                                     ccd725f Creating tag v5.4.0-beta191027175859
+  v5.4.0-beta191027193219                                                     08c13e2 Creating tag v5.4.0-beta191027193219
+  v5.4.0-beta191028183729                                                     db93161 Creating tag v5.4.0-beta191028183729
+  v5.4.0-beta191028194412                                                     4cf5789 Creating tag v5.4.0-beta191028194412
+  v5.4.0-cp1-rc1                                                              577a250 Creating tag v5.4.0-cp1-rc1
+  v5.4.0-cp1-rc2                                                              4cbc4bd Creating tag v5.4.0-cp1-rc2
+  v5.4.0-cp1-rc3                                                              691c8f4 Creating tag v5.4.0-cp1-rc3
+  v5.4.0-cp1-rc4                                                              ac833da Creating tag v5.4.0-cp1-rc4
+  v5.4.0-cp1-rc5                                                              8b84249 Creating tag v5.4.0-cp1-rc5
+  v5.4.0-cp1-rc6                                                              da82de5 Creating tag v5.4.0-cp1-rc6
+  v5.4.0-rc191114083417                                                       b807327 Creating tag v5.4.0-rc191114083417
+  v5.4.0-rc191127214037                                                       c9df5dd Creating tag v5.4.0-rc191127214037
+  v5.4.0-rc191128083422                                                       c1b98d3 Creating tag v5.4.0-rc191128083422
+  v5.4.0-rc191129083413                                                       7ed84a3 Creating tag v5.4.0-rc191129083413
+  v5.4.0-rc191130083409                                                       377cb70 Creating tag v5.4.0-rc191130083409
+  v5.4.0-rc191201083412                                                       2a7681c Creating tag v5.4.0-rc191201083412
+  v5.4.0-rc191201222135                                                       e50e334 Creating tag v5.4.0-rc191201222135
+  v5.4.0-rc191202083412                                                       e1d9cd2 Creating tag v5.4.0-rc191202083412
+  v5.4.0-rc191203083411                                                       375b14a Creating tag v5.4.0-rc191203083411
+  v5.4.0-rc191204083413                                                       b675c6c Creating tag v5.4.0-rc191204083413
+  v5.4.0-rc191205083413                                                       6605754 Creating tag v5.4.0-rc191205083413
+  v5.4.0-rc191208083412                                                       31bec2c Creating tag v5.4.0-rc191208083412
+  v5.4.0-rc191209083414                                                       5ebbc48 Creating tag v5.4.0-rc191209083414
+  v5.4.0-rc191213083413                                                       e6c4216 Creating tag v5.4.0-rc191213083413
+  v5.4.0-rc191217083413                                                       78ecfe9 Creating tag v5.4.0-rc191217083413
+  v5.4.0-rc191218083414                                                       4ea54b0 Creating tag v5.4.0-rc191218083414
+  v5.4.0-rc191219083413                                                       d673216 Creating tag v5.4.0-rc191219083413
+  v5.4.0-rc191220083414                                                       5ad3c67 Creating tag v5.4.0-rc191220083414
+  v5.4.0-rc191221083410                                                       42001ca Creating tag v5.4.0-rc191221083410
+  v5.4.0-rc191222083412                                                       f65aa8a Creating tag v5.4.0-rc191222083412
+  v5.4.0-rc191223083413                                                       61b5461 Creating tag v5.4.0-rc191223083413
+  v5.4.0-rc191224030741                                                       ccc43d9 Creating tag v5.4.0-rc191224030741
+  v5.4.0-rc191224083412                                                       9778a92 Creating tag v5.4.0-rc191224083412
+  v5.4.0-rc191225083416                                                       c012d14 Creating tag v5.4.0-rc191225083416
+  v5.4.0-rc191226083414                                                       b310903 Creating tag v5.4.0-rc191226083414
+  v5.4.0-rc191227083413                                                       1b697b3 Creating tag v5.4.0-rc191227083413
+  v5.4.0-rc191228083409                                                       2f4fc40 Creating tag v5.4.0-rc191228083409
+  v5.4.0-rc200101083412                                                       7658f9a Creating tag v5.4.0-rc200101083412
+  v5.4.0-rc200102083412                                                       d449526 Creating tag v5.4.0-rc200102083412
+  v5.4.0-rc200108063736                                                       cdfd8a3 Creating tag v5.4.0-rc200108063736
+  v5.4.0-rc200108221442                                                       af130a4 Creating tag v5.4.0-rc200108221442
+  v5.4.0-rc200111021843                                                       dc37490 Creating tag v5.4.0-rc200111021843
+  v5.4.0-rc201229083413                                                       a7f5737 Creating tag v5.4.0-rc201229083413
+  v5.4.0-rc201229231500                                                       c6339b4 Creating tag v5.4.0-rc201229231500
+  v5.4.0-rc201230083411                                                       92389c3 Creating tag v5.4.0-rc201230083411
+  v5.4.0-rc201231011815                                                       958b09c Creating tag v5.4.0-rc201231011815
+  v5.4.0-rc201231083413                                                       5b38366 Creating tag v5.4.0-rc201231083413
+  v5.4.1                                                                      ce40567 Tagging final 5.4.1 release for repo <git.Repo "/var/tmp/tmp8ped84j1/prod/kafka-connect-elasticsearch/.git">
+  v5.4.1-cp1-rc1                                                              50ad907 Creating tag v5.4.1-cp1-rc1
+  v5.4.1-cp2-rc1                                                              1b723c7 Creating tag v5.4.1-cp2-rc1
+  v5.4.1-cp3-rc1                                                              314ac93 Creating tag v5.4.1-cp3-rc1
+  v5.4.1-cp4-rc1                                                              902137c Creating tag v5.4.1-cp4-rc1
+  v5.4.1-cp5-rc1                                                              b11b38e Creating tag v5.4.1-cp5-rc1
+  v5.4.1-cp6-rc1                                                              5ad2d78 Creating tag v5.4.1-cp6-rc1
+  v5.4.1-cp6-rc2                                                              b0dd295 Creating tag v5.4.1-cp6-rc2
+  v5.4.1-cp7-rc1                                                              4bd2ac2 Creating tag v5.4.1-cp7-rc1
+  v5.4.1-rc200222011637                                                       a33de28 Creating tag v5.4.1-rc200222011637
+  v5.4.1-rc200223013202                                                       8f07b4e Creating tag v5.4.1-rc200223013202
+  v5.4.1-rc200228062545                                                       57cc5ec Creating tag v5.4.1-rc200228062545
+  v5.4.1-rc200302224725                                                       e036375 Creating tag v5.4.1-rc200302224725
+  v5.4.2                                                                      6755e85 Tagging final 5.4.2 release for repo <git.Repo "/var/tmp/tmptwc1wy7i/prod/kafka-connect-elasticsearch/.git">
+  v5.4.2-cp1-rc1                                                              df290a0 Creating tag v5.4.2-cp1-rc1
+  v5.4.2-cp2-rc1                                                              6614018 Creating tag v5.4.2-cp2-rc1
+  v5.4.2-cp2-rc2                                                              5c84917 Creating tag v5.4.2-cp2-rc2
+  v5.4.2-cp2-rc3                                                              b0e89d4 Creating tag v5.4.2-cp2-rc3
+  v5.4.2-cp3-rc1                                                              d04105d Creating tag v5.4.2-cp3-rc1
+  v5.4.2-cp4-rc1                                                              85cca35 Creating tag v5.4.2-cp4-rc1
+  v5.4.2-cp4-rc2                                                              9258749 Creating tag v5.4.2-cp4-rc2
+  v5.4.2-cp4-rc3                                                              b46bf4c Creating tag v5.4.2-cp4-rc3
+  v5.4.2-cp5-rc1                                                              97669c8 Creating tag v5.4.2-cp5-rc1
+  v5.4.2-rc200501001409                                                       4256d5b Creating tag v5.4.2-rc200501001409
+  v5.4.3                                                                      204871d Tagging final 5.4.3 release for repo <git.Repo "/var/tmp/tmplvhn_dbi/prod/kafka-connect-elasticsearch/.git">
+  v5.4.3-cp1-rc1                                                              c16f921 Creating tag v5.4.3-cp1-rc1
+  v5.4.3-cp1-rc2                                                              43888ed Creating tag v5.4.3-cp1-rc2
+  v5.4.3-cp2-rc1                                                              da91c66 Creating tag v5.4.3-cp2-rc1
+  v5.4.3-rc201004214721                                                       8eb5001 Creating tag v5.4.3-rc201004214721
+  v5.4.4                                                                      c059a84 Tagging final 5.4.4 release for repo <git.Repo "/var/tmp/tmpwm5mss4t/prod/kafka-connect-elasticsearch/.git">
+  v5.4.4-rc210427011735                                                       69dab9e Creating tag v5.4.4-rc210427011735
+  v5.4.4-rc210429025451                                                       1972d86 Creating tag v5.4.4-rc210429025451
+  v5.4.4-rc210430025541                                                       9f468d0 Creating tag v5.4.4-rc210430025541
+  v5.4.4-rc210513000205                                                       b1388a7 Creating tag v5.4.4-rc210513000205
+  v5.4.4-rc210513194526                                                       112d8c2 Creating tag v5.4.4-rc210513194526
+  v5.4.5                                                                      9c93aa2 Tagging final 5.4.5 release for repo <git.repo.base.Repo '/var/tmp/tmpd_1buqos/prod/kafka-connect-elasticsearch/.git'>
+  v5.4.5-rc210810194104                                                       dfc297f Creating tag v5.4.5-rc210810194104
+  v5.4.5-rc210826225819                                                       392572d Creating tag v5.4.5-rc210826225819
+  v5.4.6                                                                      635ff84 Tagging final 5.4.6 release for repo <git.repo.base.Repo '/var/tmp/tmpwnlvgw_l/prod/kafka-connect-elasticsearch/.git'>
+  v5.4.6-rc211119165616                                                       0c7552a Creating tag v5.4.6-rc211119165616
+  v5.4.6-rc211124002527                                                       38a50fe Creating tag v5.4.6-rc211124002527
+  v5.4.6-rc211211041455                                                       f7a682c Creating tag v5.4.6-rc211211041455
+  v5.5.0                                                                      1b9c958 Tagging final 5.5.0 release for repo <git.Repo "/var/tmp/tmpfpe_9ug3/prod/kafka-connect-elasticsearch/.git">
+  v5.5.0-beta191104225223                                                     0dc8edf Creating tag v5.5.0-beta191104225223
+  v5.5.0-beta191107162904                                                     13b0774 Creating tag v5.5.0-beta191107162904
+  v5.5.0-beta191107175615                                                     33317fc Creating tag v5.5.0-beta191107175615
+  v5.5.0-beta191108014641                                                     13e6e87 Creating tag v5.5.0-beta191108014641
+  v5.5.0-beta191108174613                                                     de1c44c Creating tag v5.5.0-beta191108174613
+  v5.5.0-beta191113041121                                                     9758ade Creating tag v5.5.0-beta191113041121
+  v5.5.0-beta191113214629                                                     5b3bcbd Creating tag v5.5.0-beta191113214629
+  v5.5.0-beta191115174539                                                     fa712f3 Creating tag v5.5.0-beta191115174539
+  v5.5.0-beta191115232333                                                     0282bb5 Creating tag v5.5.0-beta191115232333
+  v5.5.0-beta191116174304                                                     6335ec1 Creating tag v5.5.0-beta191116174304
+  v5.5.0-beta191117174341                                                     5e51341 Creating tag v5.5.0-beta191117174341
+  v5.5.0-beta191120041451                                                     50ac20a Creating tag v5.5.0-beta191120041451
+  v5.5.0-beta191127154945                                                     edda9ac Creating tag v5.5.0-beta191127154945
+  v5.5.0-beta191127174145                                                     7184edf Creating tag v5.5.0-beta191127174145
+  v5.5.0-beta191128174231                                                     b9c2925 Creating tag v5.5.0-beta191128174231
+  v5.5.0-beta191129173403                                                     2362c70 Creating tag v5.5.0-beta191129173403
+  v5.5.0-beta191130174020                                                     ffb1b3e Creating tag v5.5.0-beta191130174020
+  v5.5.0-beta191201173344                                                     99a987d Creating tag v5.5.0-beta191201173344
+  v5.5.0-beta191202173801                                                     d370579 Creating tag v5.5.0-beta191202173801
+  v5.5.0-beta191202211854                                                     3412282 Creating tag v5.5.0-beta191202211854
+  v5.5.0-beta191203173902                                                     06de34a Creating tag v5.5.0-beta191203173902
+  v5.5.0-beta191204174040                                                     f4203fd Creating tag v5.5.0-beta191204174040
+  v5.5.0-beta200107202127                                                     f57629f Creating tag v5.5.0-beta200107202127
+  v5.5.0-beta200114174117                                                     30edb48 Creating tag v5.5.0-beta200114174117
+  v5.5.0-beta200115214019                                                     c5909c8 Creating tag v5.5.0-beta200115214019
+  v5.5.0-beta200124174837                                                     8f78598 Creating tag v5.5.0-beta200124174837
+  v5.5.0-beta200125175318                                                     f71eab2 Creating tag v5.5.0-beta200125175318
+  v5.5.0-beta200126175007                                                     146c3ca Creating tag v5.5.0-beta200126175007
+  v5.5.0-beta200128175139                                                     a41d9ee Creating tag v5.5.0-beta200128175139
+  v5.5.0-beta200129180432                                                     d1ede8d Creating tag v5.5.0-beta200129180432
+  v5.5.0-beta200130175549                                                     64589f9 Creating tag v5.5.0-beta200130175549
+  v5.5.0-beta200131174907                                                     9aab92b Creating tag v5.5.0-beta200131174907
+  v5.5.0-beta200201174523                                                     042bedd Creating tag v5.5.0-beta200201174523
+  v5.5.0-beta200204025848                                                     fe99409 Creating tag v5.5.0-beta200204025848
+  v5.5.0-beta200204173843                                                     b787b6c Creating tag v5.5.0-beta200204173843
+  v5.5.0-cp1-rc1                                                              6ad2a14 Creating tag v5.5.0-cp1-rc1
+  v5.5.0-cp2-rc1                                                              e34b5ec Creating tag v5.5.0-cp2-rc1
+  v5.5.0-cp3-rc1                                                              d38fc13 Creating tag v5.5.0-cp3-rc1
+  v5.5.0-cp3-rc2                                                              5944494 Creating tag v5.5.0-cp3-rc2
+  v5.5.0-cp3-rc3                                                              6472063 Creating tag v5.5.0-cp3-rc3
+  v5.5.0-rc200410230142                                                       a82b008 Creating tag v5.5.0-rc200410230142
+  v5.5.0-rc200413224357                                                       cf0b7ea Creating tag v5.5.0-rc200413224357
+  v5.5.0-rc200414195023                                                       f3612ec Creating tag v5.5.0-rc200414195023
+  v5.5.0-rc200415054455                                                       6c280b7 Creating tag v5.5.0-rc200415054455
+  v5.5.0-rc200415204004                                                       b863e1c Creating tag v5.5.0-rc200415204004
+  v5.5.0-rc200417233707                                                       4ab08c7 Creating tag v5.5.0-rc200417233707
+  v5.5.0-rc200418032830                                                       37b48d9 Creating tag v5.5.0-rc200418032830
+  v5.5.0-rc200519213600                                                       e0560c3 Creating tag v5.5.0-rc200519213600
+  v5.5.1                                                                      2458b01 Tagging final 5.5.1 release for repo <git.Repo "/var/tmp/tmp1k7c5kp9/prod/kafka-connect-elasticsearch/.git">
+  v5.5.1-cp1-rc2                                                              b06c2f8 Creating tag v5.5.1-cp1-rc2
+  v5.5.1-cp10-rc1                                                             b2fe8ea Creating tag v5.5.1-cp10-rc1
+  v5.5.1-cp11-rc1                                                             c9712af Creating tag v5.5.1-cp11-rc1
+  v5.5.1-cp12-rc211021173327                                                  a7b6466 Creating tag v5.5.1-cp12-rc211021173327
+  v5.5.1-cp12-rc211021204046                                                  59c36d9 Creating tag v5.5.1-cp12-rc211021204046
+  v5.5.1-cp12-rc211022211444                                                  786550f Creating tag v5.5.1-cp12-rc211022211444
+  v5.5.1-cp2-rc1                                                              a573add Creating tag v5.5.1-cp2-rc1
+  v5.5.1-cp2-rc2                                                              1f2de31 Creating tag v5.5.1-cp2-rc2
+  v5.5.1-cp2-rc3                                                              2456042 Creating tag v5.5.1-cp2-rc3
+  v5.5.1-cp3-rc1                                                              93d2514 Creating tag v5.5.1-cp3-rc1
+  v5.5.1-cp3-rc2                                                              813cf81 Creating tag v5.5.1-cp3-rc2
+  v5.5.1-cp4-rc1                                                              088e70d Creating tag v5.5.1-cp4-rc1
+  v5.5.1-cp5-rc1                                                              6b7e8a3 Creating tag v5.5.1-cp5-rc1
+  v5.5.1-cp5-rc2                                                              9ca1537 Creating tag v5.5.1-cp5-rc2
+  v5.5.1-cp6-rc1                                                              de15a75 Creating tag v5.5.1-cp6-rc1
+  v5.5.1-cp7-rc1                                                              76b1cfe Creating tag v5.5.1-cp7-rc1
+  v5.5.1-cp7-rc2                                                              9ad18ad Creating tag v5.5.1-cp7-rc2
+  v5.5.1-cp8-rc1                                                              b39dadb Creating tag v5.5.1-cp8-rc1
+  v5.5.1-cp9-rc1                                                              ebdb864 Creating tag v5.5.1-cp9-rc1
+  v5.5.1-cp9-rc2                                                              7efff7a Creating tag v5.5.1-cp9-rc2
+  v5.5.1-rc200603205242                                                       0d64173 Creating tag v5.5.1-rc200603205242
+  v5.5.1-rc200605092237                                                       0ac40df Creating tag v5.5.1-rc200605092237
+  v5.5.1-rc200618060825                                                       4d08648 Creating tag v5.5.1-rc200618060825
+  v5.5.1-rc200618160831                                                       0766892 Creating tag v5.5.1-rc200618160831
+  v5.5.2                                                                      22cecc6 Tagging final 5.5.2 release for repo <git.Repo "/var/tmp/tmpptbn3pnu/prod/kafka-connect-elasticsearch/.git">
+  v5.5.2-cp1-rc1                                                              579a615 Creating tag v5.5.2-cp1-rc1
+  v5.5.2-cp2-rc220214235039                                                   239ae41 Creating tag v5.5.2-cp2-rc220214235039
+  v5.5.2-rc200916161542                                                       0004b6a Creating tag v5.5.2-rc200916161542
+  v5.5.3                                                                      145cb69 Tagging final 5.5.3 release for repo <git.Repo "/var/tmp/tmp1ocibuqx/prod/kafka-connect-elasticsearch/.git">
+  v5.5.3-cp1-rc1                                                              df46477 Creating tag v5.5.3-cp1-rc1
+  v5.5.3-cp1-rc2                                                              6939264 Creating tag v5.5.3-cp1-rc2
+  v5.5.3-cp2-rc1                                                              ee506c5 Creating tag v5.5.3-cp2-rc1
+  v5.5.3-cp3-rc1                                                              6ce97e0 Creating tag v5.5.3-cp3-rc1
+  v5.5.3-cp3-rc2                                                              8d7a9a4 Creating tag v5.5.3-cp3-rc2
+  v5.5.3-cp4-rc1                                                              62ea265 Creating tag v5.5.3-cp4-rc1
+  v5.5.3-cp5-rc1                                                              3a80c8a Creating tag v5.5.3-cp5-rc1
+  v5.5.3-rc201211201641                                                       1cbf9e4 Creating tag v5.5.3-rc201211201641
+  v5.5.3-rc201216230531                                                       9a50fde Creating tag v5.5.3-rc201216230531
+  v5.5.3-rc201220185742                                                       b5ad455 Creating tag v5.5.3-rc201220185742
+  v5.5.4                                                                      cecd8f4 Tagging final 5.5.4 release for repo <git.Repo "/var/tmp/tmpqktginx6/prod/kafka-connect-elasticsearch/.git">
+  v5.5.4-rc210323191348                                                       54827b5 Creating tag v5.5.4-rc210323191348
+  v5.5.4-rc210330192433                                                       747ff8d Creating tag v5.5.4-rc210330192433
+  v5.5.4-rc210406164845                                                       ca656b7 Creating tag v5.5.4-rc210406164845
+  v5.5.4-rc210407005732                                                       aca79bd Creating tag v5.5.4-rc210407005732
+  v5.5.4-rc210409022133                                                       808bc10 Creating tag v5.5.4-rc210409022133
+  v5.5.4-rc210413174644                                                       e335c9c Creating tag v5.5.4-rc210413174644
+  v5.5.4-sp1-rc210526204714                                                   84694d9 Creating tag v5.5.4-sp1-rc210526204714
+  v5.5.5                                                                      992dc6a Tagging final 5.5.5 release for repo <git.repo.base.Repo '/var/tmp/tmpcq00gtno/prod/kafka-connect-elasticsearch/.git'>
+  v5.5.5-rc210604183031                                                       2ee5e34 Creating tag v5.5.5-rc210604183031
+  v5.5.5-rc210608021532                                                       cf8925a Creating tag v5.5.5-rc210608021532
+  v5.5.6                                                                      2a2b6ca Tagging final 5.5.6 release for repo <git.repo.base.Repo '/var/tmp/tmpb2a4nuz6/prod/kafka-connect-elasticsearch/.git'>
+  v5.5.6-rc210810231305                                                       bc6dcea Creating tag v5.5.6-rc210810231305
+  v5.5.6-rc210827002210                                                       b72b2b7 Creating tag v5.5.6-rc210827002210
+  v5.5.7                                                                      c84903e Tagging final 5.5.7 release for repo <git.repo.base.Repo '/var/tmp/tmp9eqvn2mc/prod/kafka-connect-elasticsearch/.git'>
+  v5.5.7-cp1-rc211213205023                                                   fafef49 Creating tag v5.5.7-cp1-rc211213205023
+  v5.5.7-rc211119175647                                                       1c34248 Creating tag v5.5.7-rc211119175647
+  v5.5.7-rc211125201400                                                       5122d74 Creating tag v5.5.7-rc211125201400
+  v6.0.0-beta181009070836                                                     973ed60 Creating tag v6.0.0-beta181009070836
+  v6.0.0-beta181009071126                                                     b892111 Creating tag v6.0.0-beta181009071126
+  v6.0.0-beta181009071136                                                     3d27b41 Creating tag v6.0.0-beta181009071136
+  v6.0.0-beta181011024526                                                     6dc1346 Creating tag v6.0.0-beta181011024526
+  v6.0.0-beta200302224310                                                     20e55e9 Creating tag v6.0.0-beta200302224310
+  v6.0.0-beta200302231704                                                     5e9d03a Creating tag v6.0.0-beta200302231704
+  v6.0.0-beta200303175644                                                     8f31fb5 Creating tag v6.0.0-beta200303175644
+  v6.0.0-beta200303195706                                                     66ba384 Creating tag v6.0.0-beta200303195706
+  v6.0.0-beta200303224558                                                     61cd9d1 Creating tag v6.0.0-beta200303224558
+  v6.0.0-beta200304175619                                                     7989b0a Creating tag v6.0.0-beta200304175619
+  v6.0.0-beta200305045734                                                     7b14119 Creating tag v6.0.0-beta200305045734
+  v6.0.0-beta200307191357                                                     a85903c Creating tag v6.0.0-beta200307191357
+  v6.0.0-beta200308175402                                                     9769215 Creating tag v6.0.0-beta200308175402
+  v6.0.0-beta200309175158                                                     25274ba Creating tag v6.0.0-beta200309175158
+  v6.0.0-beta200310175819                                                     914e3c5 Creating tag v6.0.0-beta200310175819
+  v6.0.0-beta200313180019                                                     dd2894e Creating tag v6.0.0-beta200313180019
+  v6.0.0-beta200316180013                                                     75e0144 Creating tag v6.0.0-beta200316180013
+  v6.0.0-beta200318014800                                                     96b695e Creating tag v6.0.0-beta200318014800
+  v6.0.0-beta200318020606                                                     cf6902c Creating tag v6.0.0-beta200318020606
+  v6.0.0-beta200318193339                                                     035420b Creating tag v6.0.0-beta200318193339
+  v6.0.0-beta200319181050                                                     5555dfa Creating tag v6.0.0-beta200319181050
+  v6.0.0-beta200320180305                                                     8e585b4 Creating tag v6.0.0-beta200320180305
+  v6.0.0-beta200321175913                                                     4b600b6 Creating tag v6.0.0-beta200321175913
+  v6.0.0-beta200323195048                                                     a2829ab Creating tag v6.0.0-beta200323195048
+  v6.0.0-beta200324231038                                                     9b20185 Creating tag v6.0.0-beta200324231038
+  v6.0.0-beta200327181526                                                     752b517 Creating tag v6.0.0-beta200327181526
+  v6.0.0-beta200328180607                                                     5cf51c1 Creating tag v6.0.0-beta200328180607
+  v6.0.0-beta200328203642                                                     c3d10ad Creating tag v6.0.0-beta200328203642
+  v6.0.0-beta200329180007                                                     f120bf1 Creating tag v6.0.0-beta200329180007
+  v6.0.0-beta200330181305                                                     6b65ebd Creating tag v6.0.0-beta200330181305
+  v6.0.0-beta200401180714                                                     0feee9a Creating tag v6.0.0-beta200401180714
+  v6.0.0-beta200402062735                                                     299d0e1 Creating tag v6.0.0-beta200402062735
+  v6.0.0-beta200402182004                                                     1f79495 Creating tag v6.0.0-beta200402182004
+  v6.0.0-beta200403191300                                                     fc8fcc8 Creating tag v6.0.0-beta200403191300
+  v6.0.0-beta200404053245                                                     33bec41 Creating tag v6.0.0-beta200404053245
+  v6.0.0-beta200404180640                                                     34a24d3 Creating tag v6.0.0-beta200404180640
+  v6.0.0-beta200405180636                                                     47235ad Creating tag v6.0.0-beta200405180636
+  v6.0.0-beta200406203256                                                     bd0888c Creating tag v6.0.0-beta200406203256
+  v6.0.0-beta200407181828                                                     1b4bc6b Creating tag v6.0.0-beta200407181828
+  v6.0.0-beta200409182106                                                     5d96571 Creating tag v6.0.0-beta200409182106
+  v6.0.0-beta200409233332                                                     a1dec84 Creating tag v6.0.0-beta200409233332
+  v6.0.0-beta200410181108                                                     46b7a65 Creating tag v6.0.0-beta200410181108
+  v6.0.0-beta200411180614                                                     78e97ad Creating tag v6.0.0-beta200411180614
+  v6.0.0-beta200412180728                                                     766d594 Creating tag v6.0.0-beta200412180728
+  v6.0.0-beta200413180403                                                     ef6aeea Creating tag v6.0.0-beta200413180403
+  v6.0.0-beta200413202038                                                     aaf5761 Creating tag v6.0.0-beta200413202038
+  v6.0.0-beta200414180954                                                     2d1000f Creating tag v6.0.0-beta200414180954
+  v6.0.0-beta200415181825                                                     846878d Creating tag v6.0.0-beta200415181825
+  v6.0.0-beta200416181138                                                     9c2388c Creating tag v6.0.0-beta200416181138
+  v6.0.0-beta200501012433                                                     8fe7b95 Creating tag v6.0.0-beta200501012433
+  v6.0.0-beta200501174226                                                     294a081 Creating tag v6.0.0-beta200501174226
+  v6.0.0-beta200503173959                                                     96773b2 Creating tag v6.0.0-beta200503173959
+  v6.0.0-beta200504190144                                                     29028f5 Creating tag v6.0.0-beta200504190144
+  v6.0.0-beta200505174143                                                     4152975 Creating tag v6.0.0-beta200505174143
+  v6.0.0-beta200506174808                                                     c5b8bf8 Creating tag v6.0.0-beta200506174808
+  v6.0.0-beta200507175252                                                     2a20e6b Creating tag v6.0.0-beta200507175252
+  v6.0.0-beta200508184829                                                     10fef56 Creating tag v6.0.0-beta200508184829
+  v6.0.0-beta200510174527                                                     7f5755a Creating tag v6.0.0-beta200510174527
+  v6.0.0-beta200511175740                                                     6a6dfd4 Creating tag v6.0.0-beta200511175740
+  v6.0.0-beta200511191923                                                     1191127 Creating tag v6.0.0-beta200511191923
+  v6.0.0-beta200512180056                                                     1a3cd5b Creating tag v6.0.0-beta200512180056
+  v6.0.0-beta200513180430                                                     2d7ddf4 Creating tag v6.0.0-beta200513180430
+  v6.0.0-beta200514175011                                                     719392d Creating tag v6.0.0-beta200514175011
+  v6.0.0-beta200515174937                                                     c7709ef Creating tag v6.0.0-beta200515174937
+  v6.0.0-beta200519024148                                                     7095516 Creating tag v6.0.0-beta200519024148
+  v6.0.0-beta200519175713                                                     f3085a2 Creating tag v6.0.0-beta200519175713
+  v6.0.0-beta200521130423                                                     ae71605 Creating tag v6.0.0-beta200521130423
+  v6.0.0-beta200521212357                                                     a07a944 Creating tag v6.0.0-beta200521212357
+  v6.0.0-beta200522114954                                                     e895e6f Creating tag v6.0.0-beta200522114954
+  v6.0.0-beta200522181955                                                     544e28a Creating tag v6.0.0-beta200522181955
+  v6.0.0-beta200523045704                                                     0ee37c3 Creating tag v6.0.0-beta200523045704
+  v6.0.0-beta200523181544                                                     7cb2be5 Creating tag v6.0.0-beta200523181544
+  v6.0.0-beta200526181346                                                     5437bce Creating tag v6.0.0-beta200526181346
+  v6.0.0-beta200527181219                                                     c2969e9 Creating tag v6.0.0-beta200527181219
+  v6.0.0-beta200528182103                                                     37eab2f Creating tag v6.0.0-beta200528182103
+  v6.0.0-beta200528201652                                                     de07cb2 Creating tag v6.0.0-beta200528201652
+  v6.0.0-beta200529182118                                                     149a64c Creating tag v6.0.0-beta200529182118
+  v6.0.0-beta200530181008                                                     138bc16 Creating tag v6.0.0-beta200530181008
+  v6.0.0-beta200531181142                                                     e63e312 Creating tag v6.0.0-beta200531181142
+  v6.0.0-beta200601181743                                                     a6a2474 Creating tag v6.0.0-beta200601181743
+  v6.0.0-beta200602181840                                                     00e74fd Creating tag v6.0.0-beta200602181840
