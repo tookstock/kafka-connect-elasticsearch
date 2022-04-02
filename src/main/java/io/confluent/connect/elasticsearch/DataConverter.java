@@ -60,6 +60,7 @@ public class DataConverter {
   protected static final String MAP_KEY = "key";
   protected static final String MAP_VALUE = "value";
   protected static final String TIMESTAMP_FIELD = "@timestamp";
+  private float logNthFrac;
 
   private ObjectMapper objectMapper;
 
@@ -82,6 +83,7 @@ public class DataConverter {
   public DataConverter(ElasticsearchSinkConnectorConfig config) {
     this.config = config;
     this.objectMapper = new ObjectMapper();
+    this.logNthFrac = (1.0f / config.logNth());
   }
 
   private String convertKey(Schema keySchema, Object key) {
@@ -196,7 +198,7 @@ public class DataConverter {
         : preProcessValue(record.value(), record.valueSchema(), schema);
 
     byte[] rawJsonPayload = JSON_CONVERTER.fromConnectData(record.topic(), schema, value);
-    if (Math.random() < 0.01) {
+    if (Math.random() < this.logNthFrac) {
       log.info(new String(rawJsonPayload, StandardCharsets.UTF_8));
     }
     return new String(rawJsonPayload, StandardCharsets.UTF_8);

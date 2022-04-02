@@ -55,6 +55,7 @@ public class ElasticsearchSinkTask extends SinkTask {
   private OffsetTracker offsetTracker;
   private PartitionPauser partitionPauser;
   private String indexPrefix;
+  private float logNthFrac;
 
   @Override
   public void start(Map<String, String> props) {
@@ -67,6 +68,7 @@ public class ElasticsearchSinkTask extends SinkTask {
 
     this.config = new ElasticsearchSinkConnectorConfig(props);
     this.indexPrefix = config.clusterStage();
+    this.logNthFrac = (1.0f / config.logNth());
     this.converter = new DataConverter(config);
     this.existingMappings = new HashSet<>();
     this.indexCache = new HashSet<>();
@@ -298,8 +300,8 @@ public class ElasticsearchSinkTask extends SinkTask {
     String tipSeg = (parts.length >= 3) ? parts[2] : null;
     String srcPfx = srcSeg.substring(0, 3);
     String tipPfx = (tipSeg == null) ? null : tipSeg.substring(0, 3);
-    if (Math.random() < 0.01) {
-      log.info("id {} parts {} srcPfx {} srcIndex {} tipPfx {}", id, parts, srcPfx, this.indexPrefix + "." + srcPfx, tipPfx);
+    if (Math.random() < this.logNthFrac) {
+      log.info("index from id {} parts {} srcPfx {} srcIndex {} tipPfx {} f {}", id, parts, srcPfx, this.indexPrefix + "." + srcPfx, tipPfx, this.logNthFrac);
     }
 
     try {

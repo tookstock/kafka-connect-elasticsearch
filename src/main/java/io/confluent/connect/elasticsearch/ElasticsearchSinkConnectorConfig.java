@@ -53,6 +53,11 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
   public static final String CLUSTER_STAGE_DISPLAY = "Stage";
   public static final String CLUSTER_STAGE_DEFAULT = "dev";
 
+  public static final String LOG_NTH_CONFIG  = "log.nth";
+  public static final String LOG_NTH_DOC     = "Emits contents of every nth record";
+  public static final String LOG_NTH_DISPLAY = "LogNthRecord";
+  public static final int LOG_NTH_DEFAULT = 100;
+
   public static final String CONNECTION_USERNAME_CONFIG = "connection.username";
   private static final String CONNECTION_USERNAME_DOC =
       "The username used to authenticate with Elasticsearch. "
@@ -430,6 +435,17 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
             ++order,
             Width.SHORT,
             CLUSTER_STAGE_DISPLAY
+        ).define(
+            LOG_NTH_CONFIG,
+            Type.INT,
+            LOG_NTH_DEFAULT,
+            between(1, 10000),
+            Importance.MEDIUM,
+            LOG_NTH_DOC,
+            CONNECTOR_GROUP,
+            ++order,
+            Width.SHORT,
+            LOG_NTH_DISPLAY
         ).define(
             CONNECTION_USERNAME_CONFIG,
             Type.STRING,
@@ -910,6 +926,10 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
 
   public String clusterStage() {
     return getString(CLUSTER_STAGE_CONFIG);
+  }
+
+  public int logNth() {
+    return getInt(LOG_NTH_CONFIG);
   }
 
   public boolean dropInvalidMessage() {
