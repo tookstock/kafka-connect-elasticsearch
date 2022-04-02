@@ -54,6 +54,8 @@ public class ElasticsearchSinkTask extends SinkTask {
   private Set<String> indexCache;
   private OffsetTracker offsetTracker;
   private PartitionPauser partitionPauser;
+  private String indexPrefix;
+  private float logNthFrac;
 
   @Override
   public void start(Map<String, String> props) {
@@ -65,6 +67,8 @@ public class ElasticsearchSinkTask extends SinkTask {
     log.info("Starting ElasticsearchSinkTask.");
 
     this.config = new ElasticsearchSinkConnectorConfig(props);
+    this.indexPrefix = config.clusterStage();
+    this.logNthFrac = (1.0f / config.logNth());
     this.converter = new DataConverter(config);
     this.existingMappings = new HashSet<>();
     this.indexCache = new HashSet<>();
@@ -288,14 +292,23 @@ public class ElasticsearchSinkTask extends SinkTask {
   }
 
   private void tryWriteRecord(SinkRecord sinkRecord, OffsetState offsetState) {
-    String indexName = createIndexName(sinkRecord.topic());
+    // String indexName = createIndexName(sinkRecord.topic());
+    //
+    String id     = String.valueOf(sinkRecord.key());
+    String[] parts = id.split("/");
+    String srcSeg = (parts.length >= 2) ? parts[1] : parts[0];
+    String tipSeg = (parts.length >= 3) ? parts[2] : null;
+    String srcPfx = srcSeg.substring(0, 3);
+    String tipPfx = (tipSeg == null) ? null : tipSeg.substring(0, 3);
+    if (Math.random() < this.logNthFrac) {
+      log.info("index from id {} parts {} srcPfx {} srcIndex {} tipPfx {} f {}", id, parts, srcPfx, this.indexPrefix + "." + srcPfx, tipPfx, this.logNthFrac);
+    }
 
-    ensureIndexExists(indexName);
-    checkMapping(indexName, sinkRecord);
-
-    DocWriteRequest<?> docWriteRequest = null;
     try {
-      docWriteRequest = converter.convertRecord(sinkRecord, indexName);
+      tryWriteRecordPart(sinkRecord, offsetState, this.indexPrefix + "." + srcPfx);
+      if (tipPfx != null) {
+        tryWriteRecordPart(sinkRecord, offsetState, this.indexPrefix + "." + tipPfx);
+      }
     } catch (DataException convertException) {
       reportBadRecord(sinkRecord, convertException);
 
@@ -305,6 +318,19 @@ public class ElasticsearchSinkTask extends SinkTask {
       } else {
         throw convertException;
       }
+    }
+  }
+
+  private void tryWriteRecordPart(SinkRecord sinkRecord, OffsetState offsetState, String indexName) {
+    ensureIndexExists(indexName);
+    checkMapping(indexName, sinkRecord);
+    //
+    DocWriteRequest<?> docWriteRequest = null;
+    try {
+      docWriteRequest = converter.convertRecord(sinkRecord, indexName);
+    } catch (DataException convertException) {
+      reportBadRecord(sinkRecord, convertException);
+      throw convertException;
     }
 
     if (docWriteRequest != null) {

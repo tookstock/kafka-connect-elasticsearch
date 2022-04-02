@@ -48,6 +48,16 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
       + "``http``.";
   private static final String CONNECTION_URL_DISPLAY = "Connection URLs";
 
+  public static final String CLUSTER_STAGE_CONFIG  = "cluster.stage";
+  public static final String CLUSTER_STAGE_DOC     = "Stage of this deployment";
+  public static final String CLUSTER_STAGE_DISPLAY = "Stage";
+  public static final String CLUSTER_STAGE_DEFAULT = "dev";
+
+  public static final String LOG_NTH_CONFIG  = "log.nth";
+  public static final String LOG_NTH_DOC     = "Emits contents of every nth record";
+  public static final String LOG_NTH_DISPLAY = "LogNthRecord";
+  public static final int LOG_NTH_DEFAULT = 100;
+
   public static final String CONNECTION_USERNAME_CONFIG = "connection.username";
   private static final String CONNECTION_USERNAME_DOC =
       "The username used to authenticate with Elasticsearch. "
@@ -415,6 +425,27 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
             ++order,
             Width.LONG,
             CONNECTION_URL_DISPLAY
+        ).define(
+            CLUSTER_STAGE_CONFIG,
+            Type.STRING,
+            CLUSTER_STAGE_DEFAULT,
+            Importance.MEDIUM,
+            CLUSTER_STAGE_DOC,
+            CONNECTOR_GROUP,
+            ++order,
+            Width.SHORT,
+            CLUSTER_STAGE_DISPLAY
+        ).define(
+            LOG_NTH_CONFIG,
+            Type.INT,
+            LOG_NTH_DEFAULT,
+            between(1, 10000),
+            Importance.MEDIUM,
+            LOG_NTH_DOC,
+            CONNECTOR_GROUP,
+            ++order,
+            Width.SHORT,
+            LOG_NTH_DISPLAY
         ).define(
             CONNECTION_USERNAME_CONFIG,
             Type.STRING,
@@ -891,6 +922,14 @@ public class ElasticsearchSinkConnectorConfig extends AbstractConfig {
     return getList(CONNECTION_URL_CONFIG)
         .stream().map(s -> s.endsWith("/") ? s.substring(0, s.length() - 1) : s)
         .collect(Collectors.toCollection(HashSet::new));
+  }
+
+  public String clusterStage() {
+    return getString(CLUSTER_STAGE_CONFIG);
+  }
+
+  public int logNth() {
+    return getInt(LOG_NTH_CONFIG);
   }
 
   public boolean dropInvalidMessage() {

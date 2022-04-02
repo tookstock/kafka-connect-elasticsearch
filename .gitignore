@@ -3,3 +3,6 @@ docs/_build
 .idea
 *.iml
 *.DS_Store
+.delete-old-cloud-branches.sh
+.delete-old-local-branches.sh
+.tag-old-branches.sh

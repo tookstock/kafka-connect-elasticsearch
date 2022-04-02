@@ -150,6 +150,7 @@ public class ElasticsearchClient {
         // (see https://github.com/elastic/elasticsearch/issues/71159)
         // We are doing retries in the async thread instead.
         .setBackoffPolicy(BackoffPolicy.noBackoff())
+        .setGlobalPipeline("pal_jsonifier")
         .build();
   }
 
