@@ -64,6 +64,33 @@
   20220310-flip-EsPipeline                                                    6073f91 chore: removed unuseful docker file
   20220311-cfonseca-BgsAndFixesIntoRelease                                    6073f91 chore: removed unuseful docker file
   20220325-flip-DeezersMostlyWorky                                            a89887d fix: scoped name for pipeline
+  20220325-flip-DeezersMostlyWorky                                            fcec9db fix: scoped name for pipeline
+  20220329-flip-AddedCors                                                     fcec9db fix: scoped name for pipeline
+  20220329-flip-DeezersAreGo                                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220401-flip-FinalCountdown                                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220403-flip-BEFORE_MONOREPO                                               18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220403-flip-DeezersMile24                                                 18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220403-flip-OneHeartOneLove                                               18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220403-flip-STARTING_MONOREPO                                             18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220404-flip-TestsPassLint                                                 18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220405-flip-TxvLoader                                                     18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220405-flip-VSCodier                                                      18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220406-flip-LastBeerBeforeClosing                                         18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220406-flip-TestsCollideLess                                              18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220407-flip-DebeziumSpike1                                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220408-flip-BoxDeployBox                                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220408-flip-DeezerTweaks                                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220408-flip-PgStorePasses                                                 18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220409-flip-PgStorePassesPt2                                              18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220412-cfonseca-BumpCompatibleVersion240                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220412-flip-PostmanOffline                                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220413-flip-PgBulkloader                                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220414-cfonseca-AerandirSecretsFromDoppler                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220418-flip-BranchCleanup                                                 18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220418-flip-GraphqlFiddling                                               18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  20220418-flip-SeparatingTestSuites                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  AlternateApproach                                                           18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  main                                                                        18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
   main                                                                        45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
   main                                                                        c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
   main                                                                        fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
@@ -172,6 +199,59 @@
   origin/20220325-cfonseca-TookboxTerraformUpdated                            c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
   origin/20220325-drm-MorePeregrinWins                                        6073f91 chore: removed unuseful docker file
   origin/20220325-flip-DeezersMostlyWorky                                     a89887d fix: scoped name for pipeline
+  origin/20220325-flip-DeezersMostlyWorky                                     fcec9db fix: scoped name for pipeline
+  origin/20220329-cfonseca-ConfigUpdatesOnTookRealm                           c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220329-flip-AddedCors                                              fcec9db fix: scoped name for pipeline
+  origin/20220329-flip-DeezersAreGo                                           18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220330-cfonseca-FixesAfterTookRealmUpdates                         c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220331-cfonseca-MoreFixesForTookflows                              c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220331-cfonseca-RoadToSubscriptions                                c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220401-cfonseca-LimlightInMearth                                   c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220401-flip-FinalCountdown                                         18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220403-flip-BEFORE_MONOREPO                                        18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220403-flip-DeezersMile24                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220403-flip-MOVING_DIRS                                            18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220403-flip-OneHeartOneLove                                        18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220403-flip-STARTING_MONOREPO                                      18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220403-flip-TrialMonorepo                                          fcec9db fix: scoped name for pipeline
+  origin/20220404-cfonseca-Version_2_3_7_Fixes                                c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220404-flip-TestsPassLint                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220405-cfonseca-TookflowsFixOnConfigs                              18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220405-drm-Version_2_3_7_FixesPt2                                  c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220405-drm-Version_2_3_7_Live                                      c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220405-flip-TxvLoader                                              18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220405-flip-VSCodier                                               18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220406-flip-LastBeerBeforeClosing                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220406-flip-TestsCollideLess                                       18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220407-cfonseca-StableMonorepoWorld                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220407-drm-KeepSetupChanges                                        18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220407-drm-TestingTheNewWorld                                      18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220407-flip-DebeziumSpike1                                         18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220408-cfonseca-LimlightCallsMellon                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220408-cfonseca-PostMonorepoDevWork                                18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220408-drm-PeregrinCatalogRefresh                                  18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220408-flip-BoxDeployBox                                           18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220408-flip-DeezerTweaks                                           18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220408-flip-PgStorePasses                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220409-drm-OrderHistory                                            18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220409-drm-Version_2_3_7_PurchasingSearch_Hotfix                   c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
+  origin/20220409-flip-PgStorePassesPt2                                       18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220411-drm-NewSupdawgCall                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220412-cfonseca-BumpCompatibleVersion240                           18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220412-cfonseca-FixLegacyVersionCalls                              18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220412-flip-PostmanOffline                                         18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220413-flip-PgBulkloader                                           18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220414-cfonseca-AerandirSecretsFromDoppler                         18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220414-cfonseca-BagshotBoxSizes                                    18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220414-cfonseca-OpentermsPaymentMethodAllowed                      18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220414-cfonseca-PrepsForVersion_2_4_0                              18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220414-drm-V02_04_00_Live                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220415-cfonseca-AerandirConfigsEnhanced                            18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220416-cfonseca-AerandirMockingApi                                 18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220416-drm-PushNotifications                                       18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220418-flip-BranchCleanup                                          18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220418-flip-GraphqlFiddling                                        18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
+  origin/20220418-flip-SeparatingTestSuites                                   18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
   origin/3.1.0-post                                                           749a4c2 Set Confluent to 3.1.0, Kafka to 0.10.1.0-cp1.
   origin/3.1.1-post                                                           3e30828 Merge branch '3.1.0-post' into 3.1.1-post
   origin/3.1.2-post                                                           94ee4b1 Merge branch '3.1.1-post' into 3.1.2-post
@@ -269,6 +349,7 @@
   origin/fix_type_config_in_req                                               7507667 test
   origin/force-sslit                                                          cdf1554 to test it ssl
   origin/index-param-support                                                  25555ba Removed some extra logging statements.
+  origin/main                                                                 18545cc Merge pull request #2 from tookstock/20220329-flip-DeezersAreGo
   origin/main                                                                 45ae57e Merge pull request #4 from tookstock/20220219-vesparumdevs-Version23MinorTweaks
   origin/main                                                                 c457006 feat: ElasticsearchSink uses a pipeline that repairs jsonish fields * also probablistically logs 1% of calls
   origin/main                                                                 fb36f46 Merge pull request #8 from tookstock/20220226-flip-KennyLoggins
@@ -283,6 +364,11 @@
   origin/v11.0.5                                                              6ecbf7b [maven-release-plugin] Prepare staging release 11.0.7-rc-567da82
   prd                                                                         99d33cf chore: Added extra unauthenticated endpoints function
   prd_main                                                                    99d33cf chore: Added extra unauthenticated endpoints function
+  tag-10.0.x                                                                  d14884e Historical marker for origin/10.0.x
+  tag-11.0                                                                    d601415 Historical marker for origin/11.0
+  tag-11.0.x                                                                  e2f3314 Historical marker for origin/11.0.x
+  tag-11.1.x                                                                  288e9df Historical marker for origin/11.1.x
+  tag-12.0.x                                                                  60d6a1c Historical marker for origin/12.0.x
   tag-20210831-flip-RectificationOfNames                                      ec703a8 Historical tag for 20210831-flip-RectificationOfNames
   tag-20210921-flip-LShanaTova                                                238ca24 Historical tag for 20210921-flip-LShanaTova
   tag-20210930-flip-ByeByeNodeModules                                         a695b47 Historical tag for 20210930-flip-ByeByeNodeModules
@@ -407,14 +493,144 @@
   tag-20220223-davidminich-SeriouslyThisTimeNullShipWeights                   3926df4 Historical marker for origin/20220223-davidminich-SeriouslyThisTimeNullShipWeights
   tag-20220223-vesparumdevs-Version_02_03_00_live                             1f9373b Historical marker for heads/20220223-vesparumdevs-Version_02_03_00_live
   tag-20220223-vesparumdevs-Version_02_03_01_live                             029de3d Historical marker for origin/20220223-vesparumdevs-Version_02_03_01_live
+  tag-20220303-flip-HybridPgEsStore                                           7ef8e7f Historical marker for origin/20220303-flip-HybridPgEsStore
+  tag-20220308-flip-DeezerIsGo                                                f398b31 Historical marker for heads/20220308-flip-DeezerIsGo
+  tag-20220309-flip-DeezerIsGoing                                             34eead4 Historical marker for heads/20220309-flip-DeezerIsGoing
+  tag-20220310-flip-BetterSearchPt1a                                          811eb2a Historical marker for heads/20220310-flip-BetterSearchPt1a
+  tag-20220310-flip-DeezerToCloud                                             30b7658 Historical marker for heads/20220310-flip-DeezerToCloud
+  tag-20220310-flip-EsPipeline                                                9fa6799 Historical marker for heads/20220310-flip-EsPipeline
+  tag-20220311-cfonseca-BgsAndFixesIntoRelease                                36becb8 Historical marker for heads/20220311-cfonseca-BgsAndFixesIntoRelease
+  tag-20220311-drm-AerandirFixesAnew                                          ca8fc04 Historical marker for origin/20220311-drm-AerandirFixesAnew
+  tag-20220311-drm-BetterSearchPt1ForReal                                     7e98457 Historical marker for origin/20220311-drm-BetterSearchPt1ForReal
+  tag-20220311-drm-CullUnusedAerandirOps                                      8bb614e Historical marker for origin/20220311-drm-CullUnusedAerandirOps
+  tag-20220311-drm-PrepForLaunch                                              fd41beb Historical marker for origin/20220311-drm-PrepForLaunch
+  tag-20220311-drm-Version_2_3_5_Spike1                                       06a15e5 Historical marker for origin/20220311-drm-Version_2_3_5_Spike1
+  tag-20220311-drm-Version_2_3_5_Spike2                                       a21c5cf Historical marker for origin/20220311-drm-Version_2_3_5_Spike2
+  tag-20220312-drm-MergeChanges                                               652b50e Historical marker for origin/20220312-drm-MergeChanges
+  tag-20220312-drm-Needy                                                      853f7db Historical marker for origin/20220312-drm-Needy
+  tag-20220312-drm-Version_2_3_5_Spike3                                       b8c9b2e Historical marker for origin/20220312-drm-Version_2_3_5_Spike3
+  tag-20220318-drm-InventoryMagic                                             7f0fc10 Historical marker for origin/20220318-drm-InventoryMagic
+  tag-20220321-drm-BetterFilters                                              0933afd Historical marker for origin/20220321-drm-BetterFilters
+  tag-20220323-cfonseca-BlankyOnTookboxTerraform                              979f581 Historical marker for origin/20220323-cfonseca-BlankyOnTookboxTerraform
+  tag-20220324-drm-Version_2_3_6_Spike1                                       7a4b444 Historical marker for origin/20220324-drm-Version_2_3_6_Spike1
+  tag-20220325-cfonseca-TookboxTerraformUpdated                               a73f640 Historical marker for origin/20220325-cfonseca-TookboxTerraformUpdated
+  tag-20220325-drm-MorePeregrinWins                                           a7186b5 Historical marker for origin/20220325-drm-MorePeregrinWins
+  tag-3.1.1-post                                                              eae4857 Historical marker for origin/3.1.1-post
+  tag-3.1.2-post                                                              3bbee79 Historical marker for origin/3.1.2-post
+  tag-3.1.x                                                                   48a41c3 Historical marker for origin/3.1.x
+  tag-3.2.0-post                                                              6094768 Historical marker for origin/3.2.0-post
+  tag-3.2.1-post                                                              fa10a4b Historical marker for origin/3.2.1-post
+  tag-3.2.2-post                                                              e6e920f Historical marker for origin/3.2.2-post
+  tag-3.2.4-post                                                              aa8d637 Historical marker for origin/3.2.4-post
+  tag-3.2.x                                                                   90d35e9 Historical marker for origin/3.2.x
+  tag-3.3.0-post                                                              07899b8 Historical marker for origin/3.3.0-post
+  tag-3.3.1-post                                                              c40825c Historical marker for origin/3.3.1-post
+  tag-3.3.2-post                                                              a058ffe Historical marker for origin/3.3.2-post
+  tag-3.3.3-post                                                              c48c729 Historical marker for origin/3.3.3-post
+  tag-3.3.x                                                                   ef546f6 Historical marker for origin/3.3.x
+  tag-4.0.0-post                                                              953e1f2 Historical marker for origin/4.0.0-post
+  tag-4.0.1-post                                                              01cbf47 Historical marker for origin/4.0.1-post
+  tag-4.0.2-post                                                              fb8e181 Historical marker for origin/4.0.2-post
+  tag-4.0.3-post                                                              c49cb47 Historical marker for origin/4.0.3-post
+  tag-4.0.x                                                                   15ba0e5 Historical marker for origin/4.0.x
+  tag-4.1.0-post                                                              4da31d1 Historical marker for origin/4.1.0-post
+  tag-4.1.1-post                                                              23cfb48 Historical marker for origin/4.1.1-post
+  tag-4.1.2-post                                                              b910e66 Historical marker for origin/4.1.2-post
+  tag-4.1.3-post                                                              7d29eac Historical marker for origin/4.1.3-post
+  tag-4.1.4-post                                                              48420af Historical marker for origin/4.1.4-post
+  tag-4.1.x                                                                   2cc8bcf Historical marker for origin/4.1.x
+  tag-5.0.0-post                                                              61ff1f0 Historical marker for origin/5.0.0-post
+  tag-5.0.1-post                                                              a809d22 Historical marker for origin/5.0.1-post
+  tag-5.0.2-post                                                              e9219dd Historical marker for origin/5.0.2-post
+  tag-5.0.3-post                                                              67def1f Historical marker for origin/5.0.3-post
+  tag-5.0.4-post                                                              4413da7 Historical marker for origin/5.0.4-post
+  tag-5.0.x                                                                   a1f81ca Historical marker for origin/5.0.x
+  tag-5.1.0-post                                                              5267084 Historical marker for origin/5.1.0-post
+  tag-5.1.1-post                                                              26f99a2 Historical marker for origin/5.1.1-post
+  tag-5.1.2-post                                                              f61d692 Historical marker for origin/5.1.2-post
+  tag-5.1.3-post                                                              f6569dd Historical marker for origin/5.1.3-post
+  tag-5.1.4-post                                                              9d9ec13 Historical marker for origin/5.1.4-post
+  tag-5.1.x                                                                   8572f94 Historical marker for origin/5.1.x
+  tag-5.2.0-post                                                              dfbd844 Historical marker for origin/5.2.0-post
+  tag-5.2.1-cp1                                                               f64f78a Historical marker for origin/5.2.1-cp1
+  tag-5.2.1-post                                                              47dacf0 Historical marker for origin/5.2.1-post
+  tag-5.2.2-post                                                              1db35f1 Historical marker for origin/5.2.2-post
+  tag-5.2.3-post                                                              dca4075 Historical marker for origin/5.2.3-post
+  tag-5.2.4-post                                                              6e53311 Historical marker for origin/5.2.4-post
+  tag-5.2.5-post                                                              94bd3c2 Historical marker for origin/5.2.5-post
+  tag-5.2.6-post                                                              a921819 Historical marker for origin/5.2.6-post
+  tag-5.2.7-post                                                              8f77b9a Historical marker for origin/5.2.7-post
+  tag-5.2.x                                                                   1948074 Historical marker for origin/5.2.x
+  tag-5.3.0-post                                                              68d4e41 Historical marker for origin/5.3.0-post
+  tag-5.3.1-cp6                                                               15920f6 Historical marker for origin/5.3.1-cp6
+  tag-5.3.1-cp7                                                               bc0a7ca Historical marker for origin/5.3.1-cp7
+  tag-5.3.1-post                                                              7af4637 Historical marker for origin/5.3.1-post
+  tag-5.3.2-post                                                              c834ef4 Historical marker for origin/5.3.2-post
+  tag-5.3.3-post                                                              3fd1d11 Historical marker for origin/5.3.3-post
+  tag-5.3.4-post                                                              8fab995 Historical marker for origin/5.3.4-post
+  tag-5.3.5-post                                                              bfda7a9 Historical marker for origin/5.3.5-post
+  tag-5.3.6-post                                                              de68672 Historical marker for origin/5.3.6-post
+  tag-5.3.7-post                                                              8526cb8 Historical marker for origin/5.3.7-post
+  tag-5.3.8-post                                                              ced9327 Historical marker for upstream/5.3.8-post
+  tag-5.3.x                                                                   21a3a86 Historical marker for origin/5.3.x
+  tag-5.4-preview                                                             049dd9a Historical marker for origin/5.4-preview
+  tag-5.4.0-post                                                              ded0f87 Historical marker for origin/5.4.0-post
+  tag-5.4.1-post                                                              a2dd2ea Historical marker for origin/5.4.1-post
+  tag-5.4.2-post                                                              5ace92a Historical marker for origin/5.4.2-post
+  tag-5.4.3-post                                                              32bf24e Historical marker for origin/5.4.3-post
+  tag-5.4.4-post                                                              0b2e4f5 Historical marker for origin/5.4.4-post
+  tag-5.4.5-post                                                              b9b0cfb Historical marker for origin/5.4.5-post
+  tag-5.4.6-post                                                              3fae6c8 Historical marker for origin/5.4.6-post
+  tag-5.4.x                                                                   b1f3548 Historical marker for origin/5.4.x
+  tag-5.5.0-post                                                              0a7f442 Historical marker for origin/5.5.0-post
+  tag-5.5.1-post                                                              94101f3 Historical marker for origin/5.5.1-post
+  tag-5.5.2-post                                                              9854fb0 Historical marker for origin/5.5.2-post
+  tag-5.5.3-post                                                              15cc009 Historical marker for origin/5.5.3-post
+  tag-5.5.4-post                                                              cbc56a4 Historical marker for origin/5.5.4-post
+  tag-5.5.5-post                                                              b9f39a0 Historical marker for origin/5.5.5-post
+  tag-5.5.6-post                                                              5991844 Historical marker for origin/5.5.6-post
+  tag-5.5.7-post                                                              a8d45ca Historical marker for origin/5.5.7-post
+  tag-5.5.x                                                                   225b294 Historical marker for origin/5.5.x
+  tag-BEFORE_MONOREPO                                                         d4f745d right before monorepo cut
+  tag-BuildCheckPR                                                            f7eceec Historical marker for origin/BuildCheckPR
+  tag-CCLOG-1306                                                              e5ae9d9 Historical marker for origin/CCLOG-1306
+  tag-CCMSG-1394                                                              a1a55fc Historical marker for origin/CCMSG-1394
+  tag-DLQ_IT                                                                  d5650e0 Historical marker for origin/DLQ_IT
+  tag-HEAD                                                                    3f51e6e Historical marker for origin/HEAD
+  tag-NathanNam-patch-1                                                       9f1b67c Historical marker for origin/NathanNam-patch-1
+  tag-add-logs                                                                691f950 Historical marker for origin/add-logs
+  tag-add-retries                                                             9344a25 Historical marker for origin/add-retries
+  tag-archive                                                                 cb996eb Historical marker for origin/archive
+  tag-bulk_retries                                                            d4b36b2 Historical marker for origin/bulk_retries
+  tag-datastream                                                              6411d4f Historical marker for origin/datastream
+  tag-debian                                                                  1a40eee Historical marker for origin/debian
+  tag-debian-5.1+                                                             2d51dd2 Historical marker for origin/debian-5.1+
+  tag-es-logs                                                                 de291f3 Historical marker for origin/es-logs
+  tag-fix_type_config_in_req                                                  083ca26 Historical marker for origin/fix_type_config_in_req
+  tag-force-sslit                                                             2cae07b Historical marker for origin/force-sslit
+  tag-index-param-support                                                     2caf2fe Historical marker for origin/index-param-support
+  tag-main                                                                    42bb4bf Historical marker for heads/main
+  tag-master                                                                  679c4e7 Historical marker for heads/master
+  tag-org.elasticsearch-elasticsearch-7.14.0                                  84a4c4d Historical marker for maven/org.elasticsearch-elasticsearch-7.14.0
+  tag-pint-merge-ci                                                           8237db1 Historical marker for origin/pint-merge-ci
   tag-prd                                                                     8997619 Historical marker for heads/prd
   tag-prd_main                                                                e17e894 Historical marker for heads/prd_main
+  tag-rpm                                                                     edaf220 Historical marker for origin/rpm
+  tag-rpm-5.1+                                                                39ba282 Historical marker for origin/rpm-5.1+
+  tag-testStrictMappings                                                      939c2cc Historical marker for origin/testStrictMappings
+  tag-upgrade-client                                                          c8d82ef Historical marker for origin/upgrade-client
+  tag-v11.0.5                                                                 7a58267 Historical marker for origin/v11.0.5
+  tag-working                                                                 96db896 Historical marker for colivier/working
   upstream/0.10.0.0                                                           f612755 Merge remote-tracking branch 'origin/master' into 0.10.0.0
+  upstream/10.0.x                                                             dc86481  Merge branch '5.5.x' into 10.0.x (using strategy ours)
   upstream/10.0.x                                                             fe8abf7 Merge branch '5.5.x' into 10.0.x
   upstream/11.0                                                               8f67d08 Merge branch '5.5.x' into 10.0.x
   upstream/11.0.x                                                             75e9695 Merge branch '10.0.x' into 11.0.x
+  upstream/11.0.x                                                             b664ca2  Merge branch '10.0.x' into 11.0.x (using strategy ours)
+  upstream/11.1.x                                                             826a760 [maven-release-plugin] prepare for next development iteration
   upstream/11.1.x                                                             c658b7b Merge branch '11.0.x' into 11.1.x
   upstream/12.0.x                                                             5f87215 Merge branch '11.1.x' into 12.0.x
+  upstream/12.0.x                                                             62a9695  Merge branch '11.1.x' into 12.0.x (using strategy ours)
   upstream/3.1.0-post                                                         749a4c2 Set Confluent to 3.1.0, Kafka to 0.10.1.0-cp1.
   upstream/3.1.1-post                                                         3e30828 Merge branch '3.1.0-post' into 3.1.1-post
   upstream/3.1.2-post                                                         94ee4b1 Merge branch '3.1.1-post' into 3.1.2-post
@@ -473,6 +689,7 @@
   upstream/5.3.6-post                                                         ba1bcb7 Merge branch '5.3.5-post' into 5.3.6-post
   upstream/5.3.7-post                                                         0f299a3 Merge branch '5.3.6-post' into 5.3.7-post
   upstream/5.3.8-post                                                         183f743 Set Confluent to 5.3.8, Kafka to 5.3.8.
+  upstream/5.3.x                                                              434bc28 Bump Confluent to 5.3.9-SNAPSHOT, Kafka to 5.3.9-SNAPSHOT
   upstream/5.3.x                                                              7fa8264 Merge branch '5.3.8-post' into 5.3.x
   upstream/5.4-preview                                                        3e8efb9 Disable slack notification
   upstream/5.4.0-post                                                         9ca8b42 Merge branch '5.3.8-post' into 5.4.0-post
@@ -482,19 +699,32 @@
   upstream/5.4.4-post                                                         813fe16 Merge branch '5.4.3-post' into 5.4.4-post
   upstream/5.4.5-post                                                         c77c832 Merge branch '5.4.4-post' into 5.4.5-post
   upstream/5.4.6-post                                                         0e97bd8 Merge branch '5.4.5-post' into 5.4.6-post
+  upstream/5.4.7-post                                                         7d86421  Merge branch '5.4.6-post' into 5.4.7-post (using strategy ours)
+  upstream/5.4.x                                                              0c07958 Bump Confluent to 5.4.8-SNAPSHOT, Kafka to 5.4.8-SNAPSHOT
   upstream/5.4.x                                                              630c6e6 Merge branch '5.3.x' into 5.4.x
+  upstream/5.5.0-post                                                         380863c  Merge branch '5.4.7-post' into 5.5.0-post (using strategy ours)
   upstream/5.5.0-post                                                         f2522ad Merge branch '5.4.6-post' into 5.5.0-post
+  upstream/5.5.1-post                                                         52ef3f7  Merge branch '5.5.0-post' into 5.5.1-post (using strategy ours)
   upstream/5.5.1-post                                                         fe6577e Merge branch '5.5.0-post' into 5.5.1-post
+  upstream/5.5.2-post                                                         6f76eb0  Merge branch '5.5.1-post' into 5.5.2-post (using strategy ours)
   upstream/5.5.2-post                                                         bccdf32 Merge branch '5.5.1-post' into 5.5.2-post
   upstream/5.5.3-post                                                         8c027de Merge branch '5.5.2-post' into 5.5.3-post
+  upstream/5.5.3-post                                                         dc7ce4c  Merge branch '5.5.2-post' into 5.5.3-post (using strategy ours)
+  upstream/5.5.4-post                                                         5240682  Merge branch '5.5.3-post' into 5.5.4-post (using strategy ours)
   upstream/5.5.4-post                                                         5b7804c Merge branch '5.5.3-post' into 5.5.4-post
   upstream/5.5.5-post                                                         a116170 Merge branch '5.5.4-post' into 5.5.5-post
+  upstream/5.5.5-post                                                         a7485c6  Merge branch '5.5.4-post' into 5.5.5-post (using strategy ours)
   upstream/5.5.6-post                                                         19007e6 Merge branch '5.5.5-post' into 5.5.6-post
+  upstream/5.5.6-post                                                         1f6369d  Merge branch '5.5.5-post' into 5.5.6-post (using strategy ours)
   upstream/5.5.7-post                                                         3bc766a Merge branch '5.5.6-post' into 5.5.7-post
+  upstream/5.5.7-post                                                         e804934  Merge branch '5.5.6-post' into 5.5.7-post (using strategy ours)
+  upstream/5.5.8-post                                                         f82d728 Merge branch '5.5.7-post' into 5.5.8-post
+  upstream/5.5.x                                                              7ef53ea Bump Confluent to 5.5.9-SNAPSHOT, Kafka to 5.5.9-SNAPSHOT
   upstream/5.5.x                                                              fc61b3f Merge branch '5.4.x' into 5.5.x
   upstream/BuildCheckPR                                                       0c70ee8 Checking build
   upstream/CCLOG-1306                                                         0bc297f Unnecessary exclusion removed
   upstream/CCMSG-1394                                                         b3d537e CCMSG-1394: Fix compilation errors and suppress warnings.
+  upstream/CCMSG-1725                                                         5b1a256 CCMSG-1725 upgraded jackson-databind to resolve CVE
   upstream/DLQ_IT                                                             33dfaa8 Apply suggestions from code review
   upstream/NathanNam-patch-1                                                  9bd7ddc Updated the doc link
   upstream/add-logs                                                           06d5112 Add error to log`
@@ -504,17 +734,21 @@
   upstream/colivier/11.0.x                                                    7397b93 Check for null
   upstream/colivier/11.1.x                                                    c9d7d2e Merge branch '11.0.x' into colivier/11.1.x
   upstream/colivier/12.0.x                                                    84cd7e7 .
+  upstream/colivier/13.0.x                                                    68bac33 Trigger build
   upstream/colivier/13.0.x                                                    7818ab4 Remove unused
+  upstream/colivier/opensearch_12.0.x                                         5f87215 Merge branch '11.1.x' into 12.0.x
   upstream/colivier/working                                                   e414497 Set key to check against
   upstream/datastream                                                         e5876d3 Add separate if statement block for version validation.
   upstream/debian                                                             f13b533 CPKAFKA-1929: Adjust packaging for Scala 2.12 (#259)
   upstream/debian-5.1+                                                        b9865fb add security suffix (#537)
   upstream/dependabot/maven/org.elasticsearch-elasticsearch-7.14.0            1679a3e Bump elasticsearch from 7.9.3 to 7.14.0
   upstream/es-logs                                                            4bfba00 Change version logging to work with upgraded client
+  upstream/fix-validation                                                     25b2556 Update Error statements
   upstream/fix_type_config_in_req                                             7507667 test
   upstream/force-sslit                                                        cdf1554 to test it ssl
   upstream/index-param-support                                                25555ba Removed some extra logging statements.
   upstream/master                                                             6875031 Merge branch '12.0.x'
+  upstream/master                                                             fa69cd9  Merge branch '12.0.x' into master (using strategy ours)
   upstream/pint-merge-ci                                                      c9e32c9 Onboarding with for the pint auto merge in jenkins
   upstream/rpm                                                                4209c83 Merge pull request #253 from ewencp/config-noreplace
   upstream/rpm-5.1+                                                           af579bd add security suffix (#536)
@@ -551,6 +785,7 @@
   v11.1.0-rc-843c33f                                                          8ffecc6 [maven-release-plugin] copy for tag v11.1.0-rc-843c33f
   v11.1.1                                                                     f805110 [maven-release-plugin] copy for tag v11.1.1
   v11.1.1-rc-32ad327                                                          b7b6d78 [maven-release-plugin] copy for tag v11.1.1-rc-32ad327
+  v11.1.10                                                                    611bd41 [maven-release-plugin] copy for tag v11.1.10
   v11.1.2                                                                     a76c28e [maven-release-plugin] copy for tag v11.1.2
   v11.1.3                                                                     5a6a8aa [maven-release-plugin] copy for tag v11.1.3
   v11.1.4                                                                     33c4da1 [maven-release-plugin] copy for tag v11.1.4
@@ -558,6 +793,7 @@
   v11.1.6                                                                     983225f [maven-release-plugin] copy for tag v11.1.6
   v11.1.7                                                                     17118ed [maven-release-plugin] copy for tag v11.1.7
   v11.1.8                                                                     c51c29d [maven-release-plugin] copy for tag v11.1.8
+  v11.1.9                                                                     6955af0 [maven-release-plugin] copy for tag v11.1.9
   v3.1.0                                                                      a132952 Tagging final 3.1.0 release
   v3.1.0-rc1                                                                  49b6416 Auto-created from branch 3.1.x
   v3.1.0-rc2                                                                  2973404 Creating tag v3.1.0-rc2
@@ -1207,6 +1443,8 @@
   v5.4.6-rc211119165616                                                       0c7552a Creating tag v5.4.6-rc211119165616
   v5.4.6-rc211124002527                                                       38a50fe Creating tag v5.4.6-rc211124002527
   v5.4.6-rc211211041455                                                       f7a682c Creating tag v5.4.6-rc211211041455
+  v5.4.7                                                                      b85426b Tagging final 5.4.7 release for repo <git.repo.base.Repo '/var/tmp/tmpzzcixnb2/prod/kafka-connect-elasticsearch/.git'>
+  v5.4.7-rc220228230824                                                       dcac74b Creating tag v5.4.7-rc220228230824
   v5.5.0                                                                      1b9c958 Tagging final 5.5.0 release for repo <git.Repo "/var/tmp/tmpfpe_9ug3/prod/kafka-connect-elasticsearch/.git">
   v5.5.0-beta191104225223                                                     0dc8edf Creating tag v5.5.0-beta191104225223
   v5.5.0-beta191107162904                                                     13b0774 Creating tag v5.5.0-beta191107162904
@@ -1314,6 +1552,8 @@
   v5.5.7-cp1-rc211213205023                                                   fafef49 Creating tag v5.5.7-cp1-rc211213205023
   v5.5.7-rc211119175647                                                       1c34248 Creating tag v5.5.7-rc211119175647
   v5.5.7-rc211125201400                                                       5122d74 Creating tag v5.5.7-rc211125201400
+  v5.5.8                                                                      41b2970 Tagging final 5.5.8 release for repo <git.repo.base.Repo '/var/tmp/tmpjs460cxm/prod/kafka-connect-elasticsearch/.git'>
+  v5.5.8-rc220228231027                                                       753cd11 Creating tag v5.5.8-rc220228231027
   v6.0.0-beta181009070836                                                     973ed60 Creating tag v6.0.0-beta181009070836
   v6.0.0-beta181009071126                                                     b892111 Creating tag v6.0.0-beta181009071126
   v6.0.0-beta181009071136                                                     3d27b41 Creating tag v6.0.0-beta181009071136
